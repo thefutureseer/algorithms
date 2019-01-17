@@ -1,2 +1,2 @@
 # algorithms
-constructing a list of algorithms
+Constructing a list of algorithms
