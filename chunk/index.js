@@ -62,15 +62,14 @@
 function chunk(array, size) {
   const chunked = [];
   for (let i of array) {
-    const last = chunked[i] === chunked.length - 1;
+    const last = chunked[chunked.length - 1];
     if (!last || last.length === size) {
       chunked.push([i]);
     } else {
-    last.push([i]);
+       last.push(i);
+      }
   }
-  }
-  if (chunked)
-return chunked;
+  return chunked;
 }
 
 module.exports = chunk;
