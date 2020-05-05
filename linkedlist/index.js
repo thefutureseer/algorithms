@@ -9,10 +9,12 @@ class LinkedList {
   constructor() {
     this.head = null;
   }
+
   insertFirst(data) {
     this.head = new Node(data, this.head);
-    
+
   }
+
   size() {
     let counter = 0;
     let node = this.head;
@@ -22,9 +24,11 @@ class LinkedList {
     }
     return counter;
   }
+
   getFirst() {
     return this.head;
   }
+
   getLast() {
     if (!this.head) {
       return null;
@@ -38,18 +42,36 @@ class LinkedList {
       }
     }
   }
+
   clear() {
     this.head = null;
-  };
+  }
+
+  removeFirst() {
+    if (!this.head) {
+      return;
+    } else {
+      this.head = this.head.next;
+    }
+  }
+
+  removeLast() {
+    if (!this.head) {
+      return;
+    }
+    if (!this.head.next) {
+      this.head = null;
+      return;
+    }
+    var previous = this.head;
+    var node = this.head.next;
+      while (node.next) {
+        previous = node;
+        node = node.next;
+      }
+      previous.next = null;
+  }
 }
 
-// const fnlo = new Node(0);
-
-// const hd = new LinkedList();
-// hd.head = fnlo;
-// hd.insertFirst(1);
-// hd.insertFirst(2);
-// hd.insertFirst(3);
-// hd.insertFirst(4);
-
 module.exports = { Node, LinkedList };
+
