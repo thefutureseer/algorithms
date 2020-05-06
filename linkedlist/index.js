@@ -30,7 +30,7 @@ class LinkedList {
 
   getLast() {
     if (!this.head) {
-       return null;
+      return null;
     } else {
         let node = this.head;
         while(node) {
@@ -50,23 +50,23 @@ class LinkedList {
     if (!this.head) {
        return;
     } else {
-        this.head = this.head.next;
+          this.head = this.head.next;
     }
   }
 
   removeLast() {
     if (!this.head) {
-      return;
+       return;
     }
     if (!this.head.next) {
-      this.head = null;
-      return;
+       this.head = null;
+       return;
     }
     var previous = this.head;
     var node = this.head.next;
       while (node.next) {
-        previous = node;
-        node = node.next;
+          previous = node;
+          node = node.next;
       }
       previous.next = null;
   }
@@ -77,8 +77,8 @@ class LinkedList {
          //there are existing nodes in chain
          last.next = new Node(data)
       } else {
-          //the chain is empty
-          this.head = new Node(data);
+            //the chain is empty
+            this.head = new Node(data);
     }
   }
 
@@ -87,13 +87,36 @@ class LinkedList {
     let node = this.head;
     while (node) {
       if (counter === index) {
-        return node;
+         return node;
       } 
       counter ++;
       node = node.next;
     }
     return null;
   }
-}
 
+  //remove element at index given by user
+  removeAt(index) {
+    if (!this.head) {
+       return;
+    }
+    if (index === 0) {
+       this.head = this.head.next;
+       return;
+    }
+
+    const previous = this.getAt(index - 1);
+    if (!previous || !previous.next) {
+       return;
+    }
+       //Set the next property
+       previous.next = previous.next.next;
+    }
+
+  insertAt() {
+    if (!this.head) {
+       
+    }
+  }  
+}
 module.exports = { Node, LinkedList };
