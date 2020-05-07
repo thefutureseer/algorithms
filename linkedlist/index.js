@@ -11,7 +11,11 @@ class LinkedList {
   }
 
   insertFirst(data) {
-    this.head = new Node(data, this.head);
+    //Forward thinking:
+    this.insertAt(data, 0);
+
+    //Long hand
+    //this.head = new Node(data, this.head);
   }
 
   size() {
@@ -25,22 +29,57 @@ class LinkedList {
   }
 
   getFirst() {
-    return this.head;
+    //More forward thinking
+    return this.getAt(0)
+
+    //Short hand
+    //return this.head;
   }
 
   getLast() {
     if (!this.head) {
-       return null;
-    } else {
-        let node = this.head;
-        while(node) {
-    if (!node.next) {
-       return node;
-        }
-        node = node.next;
+      return null;
+    }
+
+    let node = this.head;
+    while (node) {
+      if (!node.next) {
+        return node;
       }
+      node = node.next;
     }
   }
+
+  // getLast() {
+  //   if (!this.head) {
+  //     return null;
+  //   }
+
+  //   let node = this.head;
+  //   while (node) {
+  //     if (!node.next) {
+  //       return node;
+  //     }
+  //     node = node.next;
+  //   }
+  // }
+  //Wierd Bug with getLast:
+  // getLast() { 
+  //   //Long implementation:
+  //   // if (!this.head) {
+  //   //   return null;
+  //   // }
+
+  //   // let node = this.head;
+  //   // while (node) {
+  //   //   if (!node.next) {
+  //   //     return node;
+  //   //   }
+  //   //   node = node.next;
+  //   // }
+  //short hand
+  //   return this.getAt(this.size() - 1);
+  // }
 
   clear() {
     this.head = null;
@@ -129,4 +168,5 @@ class LinkedList {
       previous.next = node;
   }
 }
+
 module.exports = { Node, LinkedList };
