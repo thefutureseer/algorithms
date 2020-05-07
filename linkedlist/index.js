@@ -11,11 +11,11 @@ class LinkedList {
   }
 
   insertFirst(data) {
-    //Forward thinking:
-    this.insertAt(data, 0);
+    //Useing insertAt for more Forward thinking:
+    //this.insertAt(data, 0);
 
     //Long hand
-    //this.head = new Node(data, this.head);
+    this.head = new Node(data, this.head);
   }
 
   size() {
@@ -29,7 +29,7 @@ class LinkedList {
   }
 
   getFirst() {
-    //More forward thinking
+    //'getAt' More forward thinking
     return this.getAt(0)
 
     //Short hand
@@ -37,20 +37,6 @@ class LinkedList {
   }
 
   getLast() {
-    if (!this.head) {
-      return null;
-    }
-
-    let node = this.head;
-    while (node) {
-      if (!node.next) {
-        return node;
-      }
-      node = node.next;
-    }
-  }
-
-  // getLast() {
   //   if (!this.head) {
   //     return null;
   //   }
@@ -63,23 +49,9 @@ class LinkedList {
   //     node = node.next;
   //   }
   // }
-  //Wierd Bug with getLast:
-  // getLast() { 
-  //   //Long implementation:
-  //   // if (!this.head) {
-  //   //   return null;
-  //   // }
-
-  //   // let node = this.head;
-  //   // while (node) {
-  //   //   if (!node.next) {
-  //   //     return node;
-  //   //   }
-  //   //   node = node.next;
-  //   // }
-  //short hand
-  //   return this.getAt(this.size() - 1);
-  // }
+  //short hand or forward thinking
+     return this.getAt(this.size() - 1);
+   }
 
   clear() {
     this.head = null;
