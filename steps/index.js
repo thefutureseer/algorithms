@@ -22,28 +22,36 @@
 
 
 //Understand base cases to make life easier:
-//If n number is equal to j stop everthing & the function is done.
+//If n number is equal to column stop everthing & the function is done.
 //If n is equal to string length console log string and call function agian for the next level of strings
-//if stairs string length is less than or equal the number j then add "#"
-//If Stairs string length is greater than j number add a space " "
+//if stairs string length is less than or equal the number column then add "#"
+//If Stairs string length is greater than column number add a space " "
 
 //Solved with Reursion (compared to the solution at the bottom: j is like row & stairs used like column)
-function steps(n, j = 0, stairs = "") {
+function steps(n, column = 0, stairs = "") {
   //Set all base cases to save infinite recursion: 
-  if (n === j) {
+  //Rows decrements untill reaches same number as columns and stops
+  if (n === column) {
      return;
-  } 
-  //The only recursive part
-  if (n === stairs.length) { 
-     console.log(stairs);
-     return steps(n, j + 1);
   }
-  if (stairs.length <= j) {
+  //Every time we get to the length of the string
+  if (n === stairs.length) { 
+     //Console log string after each row is built 
+     console.log(stairs);
+     //Go to Next column to build the next string
+     //Then return
+     steps(n, column + 1);
+     //Return can be here or along with the previous line.
+     return;
+    }
+    //Add something to every single column
+  if (stairs.length <= column) {
      stairs += "#";
   } else {
       stairs += " ";
   }  
-  steps(n, j, stairs);
+  //Call steps function with the three parameters
+  steps(n, column, stairs);
 }
 
 module.exports = steps;
@@ -57,20 +65,21 @@ module.exports = steps;
 
 // function steps(n) {
 
-//  //First iterate over rows n times
+//  //Iterate over row and column
 //  for (var row = 0; row < n; row++) {
 //      //set a variable to empty string to build a string
 //      let stair = '';
 
-//      //Iterate over column n times
+//      //Iterate over column n times, each column has either # or ' '
 //      for (var column = 0; column < n; column++) {
-        
+           //Add # or ' '
 //         if (column <= row) {
 //            stair += '#';
 //         } else {
 //           stair += ' ';
 //         }
 //      }
+// Console log each string after each iteration
 //      console.log(stair);
 //  }
 // }
