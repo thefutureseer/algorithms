@@ -46,14 +46,19 @@ class LinkedList {
     //Traverse the list untill null
     let node = this.head;
     while (node) {
-      //Check if there is not a next key, if not send the node value
+      //Check if there is not a next key value send the node value
       if (!node.next) {
         return node;
       }
+      //If next key has a value go to the value and continue the loop
       node = node.next;
     }
   }
 
+  clear() {
+    //If the linked list is assigned to null, as far as its concerned there is no list, no nodes.
+    this.head = null;
+  }
 }
 
 module.exports = { Node, LinkedList };
