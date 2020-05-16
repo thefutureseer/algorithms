@@ -23,16 +23,35 @@ class LinkedList {
   //Start at the head traverse next and keep track with a counter
   size() {
     let counter = 0
-    //Start at head
+    //Start by assigning a variable to the head
     let node = this.head;
-    //Is node a truthy value or null
+    //While node is a truthy value
     while (node) {
       counter ++;
       //Traverse by assigning variable to next property
       node = node.next;
-
     }
     return counter;
+  }
+
+  getFirst() {
+    return this.head;
+  }
+
+  getLast() {
+    //Check if there is a head 
+    if (!this.head) {
+      return null;
+    }
+    //Traverse the list untill null
+    let node = this.head;
+    while (node) {
+      //Check if there is not a next key, if not send the node value
+      if (!node.next) {
+        return node;
+      }
+      node = node.next;
+    }
   }
 
 }
