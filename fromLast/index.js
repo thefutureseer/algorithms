@@ -55,9 +55,41 @@ class LinkedList {
     }
   }
 
+  //Clear an entire linked list
   clear() {
     //If the linked list is assigned to null, as far as its concerned there is no list, no nodes.
     this.head = null;
+  }
+
+  //Remove the first node in a linked list
+  removeFirst() {
+    //If theres no head, function is done
+    if (!this.head) {
+      return;
+    }
+    //Set head to next node after first. As far as linked list is concerned the next node is the first one
+    this.head = this.head.next;
+  }
+
+  //Remove the last node of a linked list
+  removeLast() {
+    //If no first node this function is done
+    if (!this.head) {
+      return;
+    }
+    //If no second node, remove first node
+    if (!this.head.next) {
+      this.head = null;
+      return;
+    }
+    //Find the last node and get the node before it to point it at null
+    let previous = this.head;
+    let node = this.head.next;
+    while (node.next) {
+      previous = node;
+      node = node.next;
+    }
+    previous.next = null;
   }
 }
 
