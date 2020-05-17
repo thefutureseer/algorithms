@@ -71,7 +71,7 @@ class LinkedList {
     this.head = this.head.next;
   }
 
-  //Remove the last node of a linked list
+  //Remove the last node of a linked list. Find the last node and get the node before it to point it at null
   removeLast() {
     //If no first node this function is done
     if (!this.head) {
@@ -82,15 +82,29 @@ class LinkedList {
       this.head = null;
       return;
     }
-    //Find the last node and get the node before it to point it at null
+    //Set one local variable to the head/first node and one to the second node in the list
     let previous = this.head;
     let node = this.head.next;
+    //While the node has a "next" value continue to loop
     while (node.next) {
       previous = node;
       node = node.next;
     }
+    //Once next equals null set previous to null
     previous.next = null;
   }
-}
 
+  //Insert a node at the end of the list
+  insertLast(data) {
+    //Set a variable to my method getLast to have the last node readily available
+    const last = this.getLast(); 
+    //If there are existing nodes in out chain
+    if (last) {
+      last.next = new Node(data);
+    } else {
+    //If the chain is empty
+    this.head = new Node(data);
+    }
+  }
+}
 module.exports = { Node, LinkedList };
