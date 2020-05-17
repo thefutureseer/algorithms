@@ -79,8 +79,8 @@ class LinkedList {
     }
     //If no second node, remove first node
     if (!this.head.next) {
-      this.head = null;
-      return null;
+       this.head = null;
+       return null;
     }
     //Set one local variable to the head/first node and one to the second node in the list
     let previous = this.head;
@@ -107,11 +107,11 @@ class LinkedList {
     }
   }
 
-  //Get node at index number given by integer
+  //Get node at index or integer number given
   getAt(integer) {
     //Temperary variables 
     //Pointer to traverse through the list looking for the index matching the counter to return the data 
-    //If theres no head data theres no linked list. It never begins looping and with no linked list it returns null 
+    //If theres no head data theres no linked list. 1) It never begins looping and 2) with no linked list it returns null 
     let node = this.head;
     //Counter to compare with index integer 
     let counter = 0;
@@ -119,7 +119,7 @@ class LinkedList {
     while (node) {
       //Once we match the counter to the index we want to find return node info
       if (counter === integer) {
-        return node;
+         return node;
       }
       //If we don't find a match we continue the loop 
       counter++;
@@ -128,6 +128,29 @@ class LinkedList {
     }
     //If the loop is never entered or if we complete the loop and never find the exact number index return null
     return null;
+  }
+
+  //Remove given index node then seal the chain back together
+  removeAt(integer) {
+    //If theres no head return null
+    if (!this.head) {
+       return null;
+    }
+    //If the integer recieved is 0 set head to the second node on the chain and pointing at null is fine too 
+    if (integer === 0) {
+       return this.head = this.head.next;
+      
+    }
+
+    //Grab the node before the chosen node
+    let previous = this.getAt(integer - 1);
+
+    //To handle out of bounds requests: If given number is passed the last node return;
+    if (!previous || !previous.next) {
+       return;
+    }
+    //Link the prior node and the node after chosen node to each other
+    previous.next = previous.next.next;
   }
 
 }
