@@ -1,6 +1,6 @@
 //Node link
 class Node{
-  constructor(data, next = null) {
+ constructor(data, next = null) {
   this.data = data,
   this.next = next
   }
@@ -15,8 +15,8 @@ class LinkedList {
   //Create my own linked list methods
 
   insertFirst(data) {
-  //Add a head to a new node & point linked list head to it as well
-  this.head = new Node(data, this.head);
+    //Add a head to a new node & point linked list head to it as well
+    this.head = new Node(data, this.head);
   }
 
 ////////////////////////MOST METHODS WILL USE A WHILE LOOP AS SEEN BELOW//////////////////////////////////  
@@ -41,14 +41,14 @@ class LinkedList {
   getLast() {
     //Check if there is a head 
     if (!this.head) {
-      return null;
+       return null;
     }
     //Traverse the list untill null
     let node = this.head;
     while (node) {
       //Check if there is not a next key value send the node value
       if (!node.next) {
-        return node;
+         return node;
       }
       //If next key has a value go to the value and continue the loop
       node = node.next;
@@ -65,7 +65,7 @@ class LinkedList {
   removeFirst() {
     //If theres no head, function is done
     if (!this.head) {
-      return;
+       return null;
     }
     //Set head to next node after first. As far as linked list is concerned the next node is the first one
     this.head = this.head.next;
@@ -75,12 +75,12 @@ class LinkedList {
   removeLast() {
     //If no first node this function is done
     if (!this.head) {
-      return;
+       return null;
     }
     //If no second node, remove first node
     if (!this.head.next) {
       this.head = null;
-      return;
+      return null;
     }
     //Set one local variable to the head/first node and one to the second node in the list
     let previous = this.head;
@@ -100,11 +100,35 @@ class LinkedList {
     const last = this.getLast(); 
     //If there are existing nodes in out chain
     if (last) {
-      last.next = new Node(data);
+       last.next = new Node(data);
     } else {
     //If the chain is empty
-    this.head = new Node(data);
+        this.head = new Node(data);
     }
   }
+
+  //Get node at index number given by integer
+  getAt(integer) {
+    //Temperary variables 
+    //Pointer to traverse through the list looking for the index matching the counter to return the data 
+    //If theres no head data theres no linked list. It never begins looping and with no linked list it returns null 
+    let node = this.head;
+    //Counter to compare with index integer 
+    let counter = 0;
+    //Loop through linked list to find a specific node by index
+    while (node) {
+      //Once we match the counter to the index we want to find return node info
+      if (counter === integer) {
+        return node;
+      }
+      //If we don't find a match we continue the loop 
+      counter++;
+      //Traversing through each node by looking at next
+      node = node.next;
+    }
+    //If the loop is never entered or if we complete the loop and never find the exact number index return null
+    return null;
+  }
+
 }
 module.exports = { Node, LinkedList };
