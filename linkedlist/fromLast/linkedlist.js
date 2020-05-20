@@ -21,7 +21,6 @@ class LinkedList {
     // this.head = new Node(data, this.head);
   }
 
-////////////////////////MOST METHODS WILL USE A WHILE LOOP AS SEEN BELOW//////////////////////////////////  
   //Start at the head traverse next and keep track with a counter
   size() {
     let counter = 0
@@ -219,6 +218,6 @@ class LinkedList {
       node = node.next;
     }
   }
-    
+
 }
 module.exports = { Node, LinkedList };
