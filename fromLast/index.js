@@ -15,8 +15,10 @@ class LinkedList {
   //Create my own linked list methods
 
   insertFirst(data) {
+    //Forward thinking
+    this.insertAt(data, 0);
     //Add a head to a new node & point linked list head to it as well
-    this.head = new Node(data, this.head);
+    // this.head = new Node(data, this.head);
   }
 
 ////////////////////////MOST METHODS WILL USE A WHILE LOOP AS SEEN BELOW//////////////////////////////////  
@@ -39,20 +41,24 @@ class LinkedList {
   }
 
   getLast() {
-    //Check if there is a head 
-    if (!this.head) {
-       return null;
-    }
-    //Traverse the list untill null
-    let node = this.head;
-    while (node) {
-      //Check if there is not a next key value send the node value
-      if (!node.next) {
-         return node;
-      }
-      //If next key has a value go to the value and continue the loop
-      node = node.next;
-    }
+    //Forward thinking and shortened by reusing other functions 
+    return this.getAt(this.size()-1);
+
+    //Long hand
+    // //Check if there is a head 
+    // if (!this.head) {
+    //    return null;
+    // }
+    // //Traverse the list untill null
+    // let node = this.head;
+    // while (node) {
+    //   //Check if there is not a next key value send the node value
+    //   if (!node.next) {
+    //      return node;
+    //   }
+    //   //If next key has a value go to the value and continue the loop
+    //   node = node.next;
+    // }
   }
 
   //Clear an entire linked list
@@ -135,30 +141,84 @@ class LinkedList {
   }
 
   //Using 'get at' function I created above
-  //Given a number to seek, remove the link at that index number. If other nodes seal up the chain as needed
-  removeAt(number) {
-    //Corner case: Return null if there are no links on the linked list
+  //Given a number to seek, remove the link at that index number. If there are other nodes seal up the chain as needed
+  removeAt(integer) {
+    //If there are no nodes or no head set to anything at all return null
     if (!this.head) {
-       return null;
+      return null;
     }
-    //Corner case: If the given number is the first node:
-    if (number === 0) {
-       //Set head to the second node therefore deactivating/ignoring the first node and making the second node, the head/first node 
+    //If the given number is zero then set the head to second node
+    if (integer === 0 ) {
+       //Set head to second /next node
        this.head = this.head.next;
+       return;
     }
-    //
-    //The node before the one we are looking for
-    let previous = this.getAt(number - 1);
-
-    //If trying to remove a node which is past the last node
+    //remove the given index and seal the chain with the privious index and the one after the removed
+    const previous = this.getAt(integer -1);
+    //If user is looking for a node which is out of bounds/ an index higher than the amount in the 
+    //linked list or previous is null:
     if (!previous || !previous.next) {
       return null;
     }
-    //Reconnect the chain by setting the previous link to the link after link being removed
-    return previous.next = previous.next.next;
+    //Link the previous node with the node after the removed node
+    previous.next = previous.next.next;
   }
 
+  //Insert new Node with data at given index
+  insertAt(data, index) {
+    //If no nodes  
+    if (!this.head) {
+      //Set head/first node to new node with data
+      this.head = new Node(data);
+      return;
+    }
+    //If there are nodes insert the first node and make the first node the second node
+    if (index === 0) {
+      //Set the head to the new node and the new node set to the old first node/the old head
+      this.head = new Node(data, this.head);
+      return;
+    }
+    //Set a variable to get the node before the index where we want to insert a new node.
+    //Also While searching for the index to insert a new node & we never find it so the loop goes past 
+    //the entire linked list then insert as the last node
+    const previous = this.getAt(index -1 ) || this.getLast();
+    //Set a second variable to a new node and the 
+    //new nodes next property is set to replace the current next property after the insertion
+    const node = new Node(data, previous.next);
+    //Set the previous node to the new node
+    previous.next = node;
+  }
 
-
+  //For each funciton to do something to each node
+  forEach(fn) {
+    //Begin at the first node/head node
+    let node = this.head;
+    //Counter to act like index
+    let counter = 0;
+    //While loop iterates for each node until null
+    while (node) {
+      //Fn function takes in node/link and index
+      fn(node, counter);
+        //Traverse to the next node
+        node = node.next;
+        //Counter increments and then start loop over if theres a link to go to 
+        counter++;    
+    }
+  }
+  
+  //Enable a for ..of loop to work with linked list
+  //generator function with a key of Symbol.iterator
+  *[Symbol.iterator]() {
+    //Start at first node head
+    let node = this.head;
+    //Iterate through linked list with a while loop Check if theres a node to begin looping
+    while (node) {
+      //First yield will send node head and each loop will reveal each node
+      yield node;
+      //Traverse to the next property to go to the next node/link
+      node = node.next;
+    }
+  }
+    
 }
 module.exports = { Node, LinkedList };
