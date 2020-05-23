@@ -46,7 +46,7 @@ class Tree{
       const nodeArray = [this.root];
       //while theres an element in the array take out the first element
       while (nodeArray.length) {
-        //Remove the first element from the array and put it into a variable
+        //Remove the first element from the array and put it into a variable array
         const node = nodeArray.shift();
         //Take all the children of the shifted node and put into array. Take all the children out of children array and add them to this array
         nodeArray.push(...node.children);
@@ -55,7 +55,7 @@ class Tree{
         //   nodeArray.push(node.children);
         // }
         
-        //Take the node we are working on and pass it to out iterator function
+        //Take the node we are working on and pass it to out iterator function provided as an argument to traverseBF function
         //Call function on the individual node we are looking
         fn(node);
         //Then throw away each node after processing
@@ -65,3 +65,22 @@ class Tree{
 }
 
 module.exports = {Node, Tree};
+
+
+
+
+// class Node {
+//   constructor(data) {
+//     data = this.data;
+//     children = [];
+
+//   }
+// }
+
+// class Tree {
+//   constructor() {
+//     this.root = null;
+//   }
+// }
+
+// module.exports = {Node, Tree};
