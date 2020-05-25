@@ -20,4 +20,3 @@ module.exports = anagram;
 //Change the two strings into lowercase, no spaces and no symbols use regex.
 //compare number of keys they have, if number of keys match then compare values
 //Put them into hashtables to see if comperable
-

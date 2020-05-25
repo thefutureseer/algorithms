@@ -20,6 +20,7 @@ function anagrams(stringA, stringB) {
          return false;
       }
     }
+    //Else if both are false return true
     return true;
   }
   
@@ -29,7 +30,7 @@ function anagrams(stringA, stringB) {
     var charMap = {};
     //Use RegEx to remove spaces, symbols and make entire string lowercase
     for (let char of str.replace(/[^\w]/g, "").toLowerCase()) {
-      //Increment each character and handle case if no character added to character map
+      //Increment each character and handle case if no character added to character map (return map)
       charMap[char] = charMap[char] + 1 || 1;
     }
     //Return a copy of the new string
@@ -37,3 +38,20 @@ function anagrams(stringA, stringB) {
   }
 
 module.exports = anagrams;
+
+//Tools 
+
+//"Helper function" to simplify the string and build a character map to return:
+//"EMPTY OBJECT" = to add characters 
+//"FOR ..OF LOOP": Use Regex "REPLACE" method (delete white spaces, only use word characters)
+//"toLowerCase method" make sure all letters are lower case
+//"Iterating" each string and Adding each character to object as character map
+//Return character map to the main function for use
+
+//"Main function" builds character maps out of parameters strings, checks to see 
+//if two character maps have the same amount of keys and same characters:
+//"Variables" to take in the parameters and build a character map
+//"IF" statement: Check if two objects have the same amount of keys using "OBJECT"/ "KEYS "
+//"FOR ..IN LOOP" to iterate one object
+//"IF" to check if the second object has the same characters in it
+//return if true
