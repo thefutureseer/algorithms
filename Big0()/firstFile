@@ -1,13 +1,12 @@
 Runtime compexity
 
-NOTE on Big 0:
-Big 0() notation folder breaks down the more concrete way to compare algorithms. Goal: The ability to identify runtime complexity.
+NOTE on Big O:
+Big O() notation folder breaks down the more concrete way to compare algorithms. The letter o is used because the rate of growth of a function is also called "ORDER OF THE FUNCTION".
+Goal: The ability to identify runtime complexity.
 
    "Describe the performance of an algorithm" -H.T.
 
 THE BIG QUESTION: 
-How much more processing power/time is required to run your algorithm if we double the inputs?
-
 *) How much more PROCESSING POWER/TIME is required to run your algorithm if we 
 DOUBLE THE INPUTS
 
@@ -15,12 +14,15 @@ n = input size
 
 COMMON RUNTIMES we will use to identify many different algorithms:
 
-1 = constant time:
+1 = constant time/"Order 1": Seen as: O(1)
     "No matter how many elements we are working with the algorithm/operation/whatever 
-    will always take the same amount of time. Its bound by a value not by the inputs" 
+    will always take the same amount of time. Its bound by a value not by the inputs."
+ I.E. You will see this on algorithms that return an element in an already known position of an 
+ array regardless of kind or length.      
  NOTE: As you may notice the function GETFIRSTVALUE() always returns the first value.
 
 log(n) = logarithmic time: 
          "You have this if DOUBLING the number of elements you are iterating over does NOT 
          double the amount of work."
-  NOTE: Always assume search operations are log(n) 
+  NOTE: Always assume search operations are log(n)
+
