@@ -55,3 +55,5 @@ module.exports = anagrams;
 //"FOR ..IN LOOP" to iterate one object
 //"IF" to check if the second object has the same characters in it
 //return if true
+
+//BIG O NOTATION

@@ -1,0 +1,26 @@
+Runtime compexity
+
+NOTE on Big 0:
+Big 0() notation folder breaks down the more concrete way to compare algorithms. Goal: The ability to identify runtime complexity.
+
+   "Describe the performance of an algorithm" -H.T.
+
+THE BIG QUESTION: 
+How much more processing power/time is required to run your algorithm if we double the inputs?
+
+*) How much more PROCESSING POWER/TIME is required to run your algorithm if we 
+DOUBLE THE INPUTS
+
+n = input size
+
+COMMON RUNTIMES we will use to identify many different algorithms:
+
+1 = constant time:
+    "No matter how many elements we are working with the algorithm/operation/whatever 
+    will always take the same amount of time. Its bound by a value not by the inputs" 
+ NOTE: As you may notice the function GETFIRSTVALUE() always returns the first value.
+
+log(n) = logarithmic time: 
+         "You have this if DOUBLING the number of elements you are iterating over does NOT 
+         double the amount of work."
+  NOTE: Always assume search operations are log(n) 
