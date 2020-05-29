@@ -7,7 +7,7 @@ Constructing a list of algorithms and tests for each using Node.js jest to check
 Node command:
 jest [algorithmFile]/[algorithmTestFile.js] --watch
 
-NOTE on Big 0 notation folder:
+NOTE on Big 0 notation fo:
 Big 0() notation folder breaks down the more concrete way to compare algorithms. Goal: The ability to identify runtime complexity.
    "Describe the performance of an algorithm" -H.T.
 The big Qustion: 
