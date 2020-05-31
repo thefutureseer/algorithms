@@ -1,4 +1,4 @@
-//Create a Queue "First in first out stack" with add and remove functions.
+//Create a Queue "First in first out stack" (FIFO) with add and remove functions.
 class Queue {
   constructor() {
    this.data = [];
