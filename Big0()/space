@@ -1,0 +1,17 @@
+
+Runtime complexity works similarly to space complexity"
+
+~Space complexity~
+
+Defined:
+How much space or memory the program takes to complete the task.
+
+Selection sort:
+It has a space complexity of O(1)
+  1) It stores one minimum value and its index for comparison. The maximum space used 
+      does not increase w/ input size
+
+Bucket sort: 
+It has a space complexity of O(n) & Runtime of O(1)
+  1) It chops down time complexity
+  2) "Buckets" of each 

@@ -1,6 +1,6 @@
 
-~Runtime compexity~ 
-(usually the same as space complexity)
+~Runtime complexity~ 
+
 
 NOTE on Big O:
 Big O() notation folder breaks down a more concrete way to compare algorithms. The letter o is used because
@@ -67,3 +67,4 @@ or 30 days straight. Save one penny on the first day and the second day save dou
 right? Then the 3 day you double it again and everyday after that you do the same thing, you take the amount
 you have and double it. You do that for 30 days straight and you will have over one million dollars in your
 savings!". 
+
