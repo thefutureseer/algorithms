@@ -20,7 +20,8 @@ with a more efficient one in a later version. I.E. Common in agile divelopment, 
 
 COMMON RUNTIMES used to identify many different algorithms:
 
-n = input size
+1) n = input size
+2) Constants are never used. Constants are always canceled out.
 
 CONSTANT runtime/"Order 1"/ = 1 as Seen as: O(1).
       No matter how many elements we are working with the algorithm/operation/whatever
@@ -37,7 +38,7 @@ CONSTANT runtime/"Order 1"/ = 1 as Seen as: O(1).
 LOGARITHMIC runtime/ = as seen as: O(log(n))
   I.E.
     1) DOUBLING the number of elements you are iterating over does NOT double the amount of work.
-    2) Time goes up linearly while "n" goes up exponentialy: If the iteration of 10 elements take 1 second
+    2) Time goes up linearly while "n" goes up exponentialy: If the iteration of 10 elements takes 1 second
          100 elements takes 2 seconds, 1000 elements takes 3 seconds. 
     3) Usually the result of a search in an array (which is after the array is sorted).
     4) The runtime grows in proportion of the logarithm of the input size. 
@@ -51,9 +52,24 @@ LOGARITHMIC runtime/ = as seen as: O(log(n))
                         would be in attendence, it never takes any extra work for the teacher to say your name
                         over the mic and get your number as a response.
 
-LINEAR runtime/ = as seen as: O(n)
+LOGARITHMIC runtime/ O(n log(n)) 
   I.E.
+    comming soon
+
+LINEAR runtime/ = as seen as: O(n) 
+  I.E. 
     1) Looping through an entire collection will probably be O(n)
+    2) iterating through half of the same collection is still O(n)
+    3) LINEAR = Adding one element to the input set will add one unit of more time to complete the algorithm so
+        Doubling the number of inputs affects the growth of the algorithm proportionally. 
+    4) "Method to Reverse string" O(n)
+   *5) Worst case time complexity for quick sort is O(n²)
+
+LINEAR runtime/ = as seen as: O(n + m)
+  1) Iterating through two seperate collections with 2 loops doing the same thing
+       Reverse two different strings with one function call
+  2) LINEAR =  Adding one element will add one unit of more time to complete the algorithm So DOUBLING the 
+      number of inputs affects the growth of the algorithm proportionally. 
 
 
 
