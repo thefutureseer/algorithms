@@ -1,5 +1,5 @@
 
-~Runtime complexity~ 
+~RUNTIME COMPLEXITY~ Generally we want to look at worst-case performance.
 
 
 NOTE on Big O:
@@ -12,16 +12,17 @@ Goal of this Big(O) folder: The ability to identify runtime complexity.
 
 THE BIG QUESTION:
 *) How much more PROCESSING POWER/TIME is required to run your algorithm if we
-DOUBLE THE INPUTS.
+     DOUBLE THE INPUTS.
 
 
 Note: The first algorithm may not be the most efficient but the fastest to code, assuming it will be replaced
-with a more efficient one in a later version. I.E. Common in agile divelopment, esp Test driven development.
+         with a more efficient one in a later version. I.E. Common in agile divelopment, esp. Test driven development.
 
-COMMON RUNTIMES used to identify many different algorithms:
+COMMON RUNTIMES:
 
+REMEMBER:
 1) n = input size
-2) Constants are never used. Constants are always canceled out.
+2) Constants are never used/ Constants are always canceled out.
 
 CONSTANT runtime/"Order 1"/ = 1 as Seen as: O(1).
       No matter how many elements we are working with the algorithm/operation/whatever
@@ -35,6 +36,11 @@ CONSTANT runtime/"Order 1"/ = 1 as Seen as: O(1).
    3) Including a function returning that variable value = O(1) as long 
         as the number can fit into a single integer variable.
 
+        LOGARITHMS: example 1: bᴾ = n which means P is the logarithm of n as shown one line below
+                    example 1: log𝑏 n = p "The base raised to what power equals the number?"
+                    example 1: 3⁵ = 729 which means 5 is the logarithm of 729 as shown one line below
+                    example 1: log₃ 729 = 5 "The base raised to what power equals the number?"
+
 LOGARITHMIC runtime/ = as seen as: O(log(n))
   I.E.
     1) DOUBLING the number of elements you are iterating over does NOT double the amount of work.
@@ -45,12 +51,10 @@ LOGARITHMIC runtime/ = as seen as: O(log(n))
     5) More complex than constants but not as complex as polynomials.
 
   NOTE: Always assume search operations are log(n)
-  Story to remember it: In jr. high school everybody was forced to take a choir class because we had a famous
-                        teacher who the school was able to workout a deal with. All of us students were excited 
-                        to get our own number and knew exactly where to stand for the big show. Every student 
-                        could scream out their number if ask. It doesn't matter how many students 
-                        would be in attendence, it never takes any extra work for the teacher to say your name
-                        over the mic and get your number as a response.
+  STORY TO REMEMBER:   My 1st car was a midnight blue Camery made in 1989, it had power steering and automatic
+                         seatbelts. My second car was a 1965 silver mustang with a white vinyl top, no seatbelts 
+                         and no power steering.. Thats when I found out the true happiness of power steering 
+                         which is like an algorithm with log(n) time complexity. 
 
 LOGARITHMIC runtime/ O(n log(n)) 
   I.E.
@@ -59,11 +63,17 @@ LOGARITHMIC runtime/ O(n log(n))
 LINEAR runtime/ = as seen as: O(n) 
   I.E. 
     1) Looping through an entire collection will probably be O(n)
-    2) iterating through half of the same collection is still O(n)
-    3) LINEAR = Adding one element to the input set will add one unit of more time to complete the algorithm so
+         iterating through half of the same collection is still O(n)
+    2) LINEAR = Adding one element to the input set will add one unit of more time to complete the algorithm so
         Doubling the number of inputs affects the growth of the algorithm proportionally. 
-    4) "Method to Reverse string" O(n)
-   *5) Worst case time complexity for quick sort is O(n²)
+    3) "Method to Reverse string" O(n)
+   *4) Worst case time complexity for quick sort is O(n²)
+STORY TO REMEMBER:    In jr. high school everybody was forced to take a choir class because we had a famous
+                        teacher who the school was able to workout a deal with. All of us students were excited 
+                        to get our own number and knew exactly where to stand for the big show. Every student 
+                        could scream out their number if ask. It doesn't matter how many students 
+                        would be in attendence, it never takes any extra work for the teacher to say your name
+                        over the mic and get your number as a response.
 
 LINEAR runtime/ = as seen as: O(n + m)
   1) Iterating through two seperate collections with 2 loops doing the same thing
