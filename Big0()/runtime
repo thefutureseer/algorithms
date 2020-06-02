@@ -36,10 +36,11 @@ CONSTANT runtime/"Order 1"/ = 1 as Seen as: O(1).
    3) Including a function returning that variable value = O(1) as long 
         as the number can fit into a single integer variable.
 
-        LOGARITHMS: example 1: bᴾ = n which means P is the logarithm of n as shown one line below
-                    example 1: log𝑏 n = p "The base raised to what power equals the number?"
+        LOGARITHMS: In computer science if the log base is not mentioned its (₂) so [log = log₂]
+                    example 1: bᴾ = n which means P is the logarithm of n as shown one line below
+                    example 1:[ Pronounced: log base b of n equals p] log𝑏 n = p "The base (𝑏) raised to what power equals the number (n)?"
                     example 1: 3⁵ = 729 which means 5 is the logarithm of 729 as shown one line below
-                    example 1: log₃ 729 = 5 "The base raised to what power equals the number?"
+                    example 1: [Pronounced: log base 3 of 729 equals 5] log₃ 729 = 5 "The base (₃) raised to what power equals the number(729)?"
 
 LOGARITHMIC runtime/ = as seen as: O(log(n))
   I.E.
