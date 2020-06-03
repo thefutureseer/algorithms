@@ -9,7 +9,7 @@
 // a = [S,T,O,P];
 
 //#1 psuedo code=> #1 with three methods including reverse
-//Big O(n)
+//Big O(n) Linear
 // 1) turn the string into an array
 // 2) reverse the array
 // 3) take away the commas => turn the array into a string
@@ -29,7 +29,7 @@
 
 
 //#2 PSUEDO CODE #2 A LITTLE MORE MANUAL with for ..of loop 
-//Big O(n)
+//Big O(n) Linear
 //Create an empty string variable
 //for of loop through each character of string provided
 //take the character and add it to the empty string variable
@@ -48,7 +48,7 @@
 // }
 
 //#3 with reduce helper function 
-//Big O(n)
+//Big O(n) Linear
 
 // function reverse(str) {
 //   //Can return right away
