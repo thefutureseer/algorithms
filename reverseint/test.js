@@ -21,3 +21,7 @@ test('ReverseInt flips a negative number', () => {
   expect(reverseInt(-90)).toEqual(-9);
   expect(reverseInt(-2359)).toEqual(-9532);
 });
+
+// test('ReverseInt stops work on large numbers, tried up to 16 digits', () => {
+//   expect(reverseInt(11111112012211111)).toEqual(11111221021111111);
+// });

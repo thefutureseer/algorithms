@@ -25,14 +25,15 @@
 
 //#2 Not best but is Using advanced array helper : array.every()
 //Bit O(n)
-// function palindrome(str) {
+
+function palindrome(str) {
     //Can be returned right away. take given string, split, ".every" method to do something to every character
-//  return str.split('').every((char, i)=>{
+ return str.split('').every((char, i)=>{
      //Return the boolean of whether or not the two strings match
      //str.length is the length of the string. 
      //"- i" is iterating over entire string
      //and "- 1" because it starts with a zero index
-//   return char === str[str.length - i - 1]
-//  });
-// }
-// module.exports = palindrome;
+  return char === str[str.length - i - 1]
+ });
+}
+module.exports = palindrome;
