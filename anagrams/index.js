@@ -56,4 +56,7 @@ module.exports = anagrams;
 //"IF" to check if the second object has the same characters in it
 //return if true
 
-//BIG O NOTATION
+//BIG O NOTATION "Order N"
+//Big O(n) 
+//Linear time
+//The worst case time (iterations) grows on par with the number of items in the input in other words N elements requires N iterations
