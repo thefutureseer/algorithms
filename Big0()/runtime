@@ -58,7 +58,10 @@ LINEAR runtime/ = as seen as: O(n + m)
       number of inputs affects the growth of the algorithm proportionally. 
 
 
-        ~LOGARITHMS: In computer science if the log base is not mentioned its (₂) so [log = log₂]
+        ~LOGARITHMS: 
+                      "Logarithmic time complexity in an algorithm is when it reduces the size of the input 
+                     data in each step."
+                    In computer science if the log base is not mentioned its (₂) so [log = log₂]
                     example 1: bᴾ = n which means P is the logarithm of n as shown one line below
                     example 1:[ Pronounced: log base b of n equals p] log𝑏 n = p "The base (𝑏) raised to what power equals the number (n)?"
                     example 1: 3⁵ = 729 which means 5 is the logarithm of 729 as shown one line below
