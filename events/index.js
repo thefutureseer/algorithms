@@ -27,7 +27,7 @@ class Events {
   trigger(eventName) {
     //If the event name is already registered do this
     if (this.events[eventName]) {
-       //Loop through and execute every callback in that array of values
+       //Loop through and execute every callback in the array of values
        for (let cb of this.events[eventName]) {
            cb();
        }
