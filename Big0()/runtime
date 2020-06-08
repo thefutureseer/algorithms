@@ -73,8 +73,7 @@ LOGARITHMIC runtime/ = as seen as: O(log𝑏(n))
     2) Time goes up linearly while "n" goes up exponentialy: If the iteration of 10 elements takes 1 second
          100 elements takes 2 seconds, 1000 elements takes 3 seconds. 
     3) Usually the result of a search in an array (which is after the array is sorted).
-    4) The runtime grows in proportion of the logarithm of the input size. 
-    5) More complex than constants but not as complex as polynomials.
+    4) More complex than constants but not as complex as polynomials.
 
   NOTE: Always assume search operations are log𝑏(n)
   STORY TO REMEMBER:   My 1st car was a midnight blue Camery made in 1989, it had power steering and automatic
