@@ -62,29 +62,3 @@ module.exports = matrix;
 //Iterating over the last character which has not been iterated through yet, on each row and 
 //repeat the spiral or inward iteration of arrays 
   
-
-// function matrix(n) {
-//   //Create empty array of arrays called results
-//   let results = [];
-//   //Counter variable starting at 1
-//   let counter = 1;
-//   let startC = 0;
-//   let endC = n - 1;
-//   let startR = 0;
-//   let endR = n - 1;
-
-//   //while the start column is less than or equal to end column and start row is less than or equal to end row
-//   while (startC <= endC && startR <= endR) {
-            //Responsible for the top row
-//          for (let i = startC; i <= endC; i++) {
-//              results[startR][i] = counter;
-//              counter++;
-//} startR++
-            // for (let i = startR; i <= endR; i++) {
-            //     result[endC][i] = counter;
-            //     counter++
-            // } endC--;
-//}
-//   }
-// }
-// module.exports = matrix;
