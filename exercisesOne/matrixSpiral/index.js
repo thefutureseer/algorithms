@@ -1,6 +1,7 @@
 
 
 //Time complexity is quadradic big O(n^2)
+//For every n things added there needs to be n^2 more things to do to finish the algorithm.
 
 
 
