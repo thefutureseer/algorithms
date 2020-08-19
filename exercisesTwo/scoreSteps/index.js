@@ -34,21 +34,21 @@ function steps(n, column = 0, stairs = "") {
   if (n === column) {
      return;
   }
-  //Every time we get to the length of the string
+  //Every time we get to the length of the string:
   if (n === stairs.length) { 
      //Console log string after each row is built 
      console.log(stairs);
      //Go to Next column to build the next string
      //Then return
      steps(n, column + 1);
-     //Return can be here or along with the previous line.
+     //Return can be here or at the beginning of the previous line.
      return;
     }
     //Add something to every single column
   if (stairs.length <= column) {
      stairs += "#";
   } else {
-      stairs += " ";
+     stairs += " ";
   }  
   //Call steps function with the three parameters
   steps(n, column, stairs);

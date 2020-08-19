@@ -7,6 +7,10 @@
 //If 1-n length each on requires that number of hashtags
 //If no hashtags add spaces to equal the same amount of "n"
 
+
+
+
+
 // function pyramid(n, columns = (n*2)-1, level = "") {
 //   var row = 0;
 
@@ -32,22 +36,41 @@
 
 // module.exports = pyramid;
 
-function pyramid(n) {
-  const midpoint = Math.floor((2 * n - 1) / 2);
+// function pyramid(n) {
+//   const midpoint = Math.floor((2 * n - 1) / 2);
 
-  //Iterate through rows up to n - 1
-  for (let row = 0; row < n; row++) {
-    let level = "";
+//   //Iterate through rows up to n - 1
+//   for (let row = 0; row < n; row++) {
+//     let level = "";
 
-    for (let column = 0; column < 2 * n - 1; column++) {
-      if (midpoint - row <= column && midpoint + row >= column) {
-       level += "#";
+//     for (let column = 0; column < 2 * n - 1; column++) {
+//       if (midpoint - row <= column && midpoint + row >= column) {
+//        level += "#";
+//       } else {
+//         level += " ";
+//       }
+//     }
+//     console.log(level);
+//   }
+// }
+
+// module.exports = pyramid;
+
+//Create a pyramid out of hastags
+
+//
+
+function pyramid(n, column = Math.floor(2 * n - 1), level) {
+  for (let row = 0; row < n; row ++) {
+    
+    for (let column = 0; column < n; column ++) {
+      
+      if (row < ) {
+        
       } else {
-        level += " ";
+        
       }
     }
-    console.log(level);
   }
 }
-
-module.exports = pyramid;
+// module.exports = pyramid;
