@@ -6,17 +6,6 @@
 //Given a string, return a new string in the reverse order.
 //E.I. : reverse(REVERSE) === ESREVER , reverse(STOP) === POTS
 
-
-// function reverse(str) {
-//   let accume = '';
-//   for (i of str) {
-//     accume = i + accume;
-//   };
-//   return accume;
-// }
-// module.exports = reverse;
-
-
 // psuedo code=> 
 // 1) turn the string into an array
 // 2) reverse the array
@@ -24,93 +13,51 @@
 // 4) return the string now reversed
 
 
+//#4 
+//Answer with reduce helper method:
+// function reverse(str) {
+//  return str.split('').reduce((strRev, chr) => {
+//   return chr + strRev;
+//  }, '');
+// };
+
+//Same answer condenced to a single line
+function reverse(str) {
+  //Reduce takes two arguments function and a starting 
+  //initial value for the function. The function will run, pass in
+  //The starting argument as the first argument of the function and
+  //then whatever gets returned from the inner function will be
+  //used as the starting argument for each succesive run of the function.
+  //In total the reduce argument function runs 1 time for every 
+  //element in the given array. The first argument in the function is
+  //the developing reversed string. the second argument is the character
+  //currently being worked on . 
+  //The equation of character currently being worked on plus starting argument
+  //Means its starting at the end of the given array accumulating in reverse
+  //If those two were reversed it would accumulate in order. 
+  return str.split('').reduce((accume, i) => i + accume, '');
+};
+
+module.exports = reverse;
+
+//#3 
+//NO REVERSE FUNCTION Answer with a for loop 
+// function reverse(str) {
+//   let strRev = "";
+//   for (i of str) {
+//    strRev = i + strRev;
+//   }
+//   return strRev;
+// };
+
+// module.exports = reverse;
+
 
 // PSUEDO CODE #2 A LITTLE MORE MANUAL
 //Create an empty string variable
 //for of loop through each character of string provided
 //take the character and add it to the empty string variable
-//return the variable 
-
-// function reverse(str) {
-//   let i = '';
-//   for (let character of str) {
-//     i = character + i;
-//   }
-//   return i;
-// }
-// module.exports = reverse;
-
-// ......--------------------------------------------------------------------
-
-//#3 PSUEDO CODE #3
-// str = 'abcd';
-// function reverse(str) {
-//   return str.split('').reduce((strAccumulator, element)=> {
-//    return  element + strAccumulator;
-//   }, '');
-// }
-
-// module.exports = reverse;
-// ......--------------------------------------------------------------------
-
-
-// ......--------------------------------------------------------------------
-//#1.0 easy  PASSED January 2nd 2020
-// function reverse(str) {
-//  return str.split('').reverse().join('');
-// }
-// module.exports = reverse;
-
-// ......--------------------------------------------------------------------
-//#1.5 2nd easiest PASSED 1-2-2020
-// function reverse(str) {
-//   const arr = str.split('');
-//   arr.reverse();
-//   return arr.join('');
-// }
-// module.exports = reverse;
-
-// ......--------------------------------------------------------------------
-//#2 without reverse method. for of loop 2015 PASSED 1-2-2020
-// function reverse(str) {
-//   let reversed = '';
-//   for (let i of str) {
-//     reversed = i + reversed;
-//   }
-//   return reversed;
-// }
-// function reverse(str) {
-//   let j = '';
-//   for (let i of str) {
-//     j = i + j;
-//   }
-//   return j;
-// }
-// module.exports =reverse;
-
-// ......--------------------------------------------------------------------
-// #3 more manual style
-// function reverse(str) {
-//  return str.split('').reduce((accumulativeArray, passThrough) => {
-//     return passThrough + accumulativeArray;
-//   }, '');
-// }
-// module.exports = reverse;
-
-// #3.5 simplified!! changed it and passed firt try 1-2-2020
-// function reverse(str) {
-//   return str.split('').reduce((accumulativeArray, passThrough) => passThrough + accumulativeArray, '');
-//  }
-//  module.exports = reverse;
-
-        // ......--------------------------------------------------------------------
-        //#1.0 easy
-
-        // function reverse(str) {
-          //  return str.split('').reverse().join('');
-          // }
-          
-          // module.exports = reverse;
+//return the variable
 
 //#2
 //Create a variable and change the variable every step of the way
@@ -121,3 +68,15 @@
 //   return rev.join('');
 // }
 // module.exports = reverse;
+    
+// ......--------------------------------------------------------------------
+//#1.0 easies/simple using reverse method
+
+// function reverse(str) {
+  //  return str.split('').reverse().join('');
+  // }
+  
+  // module.exports = reverse;
+
+
+
