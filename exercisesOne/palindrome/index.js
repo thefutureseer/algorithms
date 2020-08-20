@@ -1,3 +1,7 @@
+//Big O and why:
+//Big O(n)
+//Each time you add one character to the string the program adds
+//the same amount of time as it did with each other character
 
 // --- Directions
 // Given a string, return true if the string is a palindrome
@@ -11,12 +15,12 @@
 
 //#1 most compact solution
 //PSUEDO CODE: Reverse the string then compare the reversed string to the original.
-function palindrome(str) {
- const pal = str.split('').reverse().join('');
- return pal === str;
-}
+// function palindrome(str) {
+//   const pal = str.split('').reverse().join('');
+//   return pal === str;
+// }
 
- module.exports = palindrome;
+//  module.exports = palindrome;
 
 //#2 Not best but is Using advanced array helper : array.every() 
 
@@ -31,3 +35,12 @@ function palindrome(str) {
  
 // }
 // module.exports = palindrome;
+
+
+function palindrome(str) {
+ const strRev = str.split('').reverse().join('');
+ if (str === strRev) {
+   return true;
+ }
+}
+module.exports = palindrome;
