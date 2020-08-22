@@ -86,7 +86,7 @@ QUASILINEAR runtime/ "Order N Log N" = as seen as: O(n * log𝑏(n))
       one by one, they split the data in chunks and discards a large amount on every iteration.
 
 
-QUADRATIC runtime/ "Order N Squared" = as seen as O(n^2) || O(n²)
+QUADRATIC runtime/ "Order n Squared" = as seen as O(n^2) || O(n²)
   1) Nested double for loops
 
   IMAGE: If we have a party of people who don't know each other and everytime someone arrives they have to 
