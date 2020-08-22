@@ -12,8 +12,6 @@ test("Get the longest Palindrome within the string: abracadabra", () => {
  expect(longest_palindrome("abracadabra")).toBe('aca');
 });
 
-test("Get the longest Palindrome within the string: HYTBCABADEFGHABCDEDCBAGHTFYW12345678987654321ZWETYGDE", 
-  () => {
-    expect(longest_palindrome("HYTBCABADEFGHABCDEDCBAGHTFYW12345678987654321ZWETYGDE")).toBe('12345678987654321');
+test("Get the longest Palindrome within the string: HYTBCABADEFGHABCDEDCBAGHTFYW12345678987654321ZWETYGDE", () => { expect(longest_palindrome("HYTBCABADEFGHABCDEDCBAGHTFYW12345678987654321ZWETYGDE")).toBe('12345678987654321');
 });
 
