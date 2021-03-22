@@ -2,17 +2,40 @@
 <html>
   <head>
   </head>
+  <body onload="onloadevent()">
+    
+    <h1>Click the button</h1>
+    <button onclick="buttonfunction()">Click me!</button>
+    <p id="any">No hello</p>
+    <script>
+    // function buttonfunction() {
+    //   document.getElementById("any").innerHTML = "hello";
+    //   }
+
+    function onloadevent() {
+      document.getElementById("any").innerHTML = "loaded! Hello's";
+    }
+      </script>
+  <script src='index.js'></script>
+
+  </body>
+</html>
+
+
+
+<!-- //////////////////////////////////////////////////////////////// -->
+<!-- 
+<!DOCTYPE html>
+<html>
+  <head>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
   <body>
     <h1>Click the button</h1>
-    <button>Click me!</button>
+    <button >Click me!</button>
     <script>
-      document.getElementsByTagName('button').on('click', ()=>{
-        console.log('hello!')
-      });
-      document.getElementsByTagName('button').trigger('click', () => {
-        
-      })
+
       </script>
   <script src='index.js'></script>
   </body>
-</html>
+</html> -->

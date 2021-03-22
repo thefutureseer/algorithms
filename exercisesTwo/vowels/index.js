@@ -2,6 +2,7 @@
 
 //Big O(log n)
 
+
 // function vowels(str) {
 //  let count = 0;
 //  //Use either a String or an Array but an array might be better here because future dev looking at this string
@@ -33,8 +34,25 @@
 // }
 
 //Even more simple! 
+// function vowels(str) {
+//    return (str.match(/[aeiou]/ig)||[]).length;
+//  }
+
+// module.exports = vowels;
+
+//Find all the vowels of a given string
+
 function vowels(str) {
-   return (str.match(/[aeiou]/ig)||[]).length;
- }
+  //REGEX: square braces says if the given string contains any character inside of the square braces let me know
+  //REGEX: g makes sure, after one match, continue searching for more matches if there are multiple vowels find them all
+  //REGEX: i to make it case insensitive
+  
+  //Set a variable to store the outcome of
+  // the given string using the match method with RegEX to match all vowels 
+  //the given string might have wheather upper or lowercase
+ var matches = (str.match(/[aeiou]/gi));
+ //With a trnary operation return the number value of the outcome. It may be zero
+ return matches ? matches.length : 0
+}
 
 module.exports = vowels;
