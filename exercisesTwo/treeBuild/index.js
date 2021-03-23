@@ -44,6 +44,20 @@ class Tree {
       fn(node);
     } 
   }
+  //ONly a subtle difference from Breadth first traversing 
+  traverseDF(fn) {
+   //Same: Create an array for traversing with only the root
+   const nodeToProcess = [this.root];
+   //Same: as long as the array has something in it loop through it
+   while (nodeToProcess.length) {
+     //Same: Take out the first thing in the array
+     const childToProcess = nodeToProcess.shift();
+     //DIFFERENT: put all the children of the shifted data into the array for processing in the same order.
+     nodeToProcess.unshift(...childToProcess.children);
+
+     fn(childToProcess);
+   }
+  }
 
 }
 
