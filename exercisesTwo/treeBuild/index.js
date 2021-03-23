@@ -52,9 +52,9 @@ class Tree {
    while (nodeToProcess.length) {
      //Same: Take out the first thing in the array
      const childToProcess = nodeToProcess.shift();
-     //DIFFERENT: put all the children of the shifted data into the array for processing in the same order.
+     //DIFFERENT: put all the children of the shifted data into the front of the array for processing in the same order as above.
      nodeToProcess.unshift(...childToProcess.children);
-
+     //Same: recursion part, put shifted node into the argument function for processing.
      fn(childToProcess);
    }
   }
