@@ -1,24 +1,24 @@
-//Make a Queue data structure (first in first out) with three functions; add, remove and peek.  
+// --- Directions
+// Implement a 'peek' method in this Queue class.
+// Peek should return the last element (the next
+// one to be returned) from the queue *without*
+// removing it.
+
 class Queue {
-  constructor(data) {
-   this.data = [];
+  constructor() {
+    this.data = [];
   }
 
-  //Add integers always added to the top
   add(record) {
-   this.data.unshift(record);
+    this.data.unshift(record);
   }
 
-  //Remove integers first in gets removed first
-  remove() {
-   return this.data.pop();
-  }
-  
-  //Show the "first in" peice of data
   peek() {
+    return this.data[this.data.length-1]
+  }
 
-   return this.data[this.data.length -1];
+  remove() {
+    return this.data.pop();
   }
 }
-
 module.exports = Queue;
