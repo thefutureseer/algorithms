@@ -1,4 +1,4 @@
-const binarySearch = require('./index');
+const {binarySearch, factorial} = require('./index');
 
 test('BinarySearch is a function', ()=> {
   expect(typeof binarySearch).toEqual('function');
@@ -18,4 +18,8 @@ test('If key is the only element in array', ()=> {
 
 test('Long array to search', () => {
   expect(binarySearch([1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,,4,5,6,7,8,9,10,11,12,13,14,15,16,17,45,56], 45)).toBeTruthy();
+});
+
+test('Only the number 1', () => {
+  expect(factorial(1)).toBeTruthy();
 });
