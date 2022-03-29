@@ -22,23 +22,47 @@
 //    q.remove() // 2
 //    q.remove() // 'There'
 
+// const Queue = require('./queue');
+
+// function weave(sourceOne, sourceTwo) {
+//   //create a third queue
+//   const QueueThree = new Queue()
+//   //loop through sourceOne and sourceTwo and stop at the length
+//   //of the source continue with the alternate source.
+//   //make sure either queue can be shorter.
+//   while (sourceOne.peek() || sourceTwo.peek()) {
+//   if (sourceOne.peek()) {
+//     QueueThree.add(sourceOne.remove());
+//   }
+//   if (sourceTwo.peek()) {
+//     QueueThree.add(sourceTwo.remove());
+//   }
+//     };
+//     return QueueThree;
+//   };
+
 const Queue = require('./queue');
 
 function weave(sourceOne, sourceTwo) {
-  //create a third queue
-  const QueueThree = new Queue()
-  //loop through sourceOne and sourceTwo and stop at the length
-  //of the source continue with the alternate source.
-  //make sure either queue can be shorter.
+  //add from both ques to this one
+  const thirdQue = new Queue();
+
+  //check Que source if there is data. if so, add it to third Queue 
   while (sourceOne.peek() || sourceTwo.peek()) {
-  if (sourceOne.peek()) {
-    QueueThree.add(sourceOne.remove());
-  }
-  if (sourceTwo.peek()) {
-    QueueThree.add(sourceTwo.remove());
-  }
+
+    //check if data is in sourceOne
+   if (sourceOne.peek()) {
+     //remove data from the queue using the remove function
+     thirdQue.add(sourceOne.remove());
+   };
+    //check if data is in sourceTwo
+    if (sourceTwo.peek()) {
+      //remove data from the queue by using the remove function
+      thirdQue.add(sourceTwo.remove());
     };
-    return QueueThree;
-  };
+
+  }
+  return thirdQue;
+}
 
 module.exports = weave;
