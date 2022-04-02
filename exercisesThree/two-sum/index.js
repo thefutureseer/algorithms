@@ -10,12 +10,10 @@ function twoSum(arr, target) {
     let pointer2 = target - pointer1;
 
     if (map.has(pointer2)) {
-      console.log([i, map.get(pointer2)])
       return [i, map.get(pointer2)];
     }
     map.set(pointer1, i);
-    console.log(map);
   }
 }
 
-twoSum([1,2,3,4,5,6], 11)
+module.exports = twoSum;
