@@ -15,4 +15,5 @@ Big 0() notation folder breaks down the more concrete way to compare algorithms.
 "Describe the performance of an algorithm" -H.T.
 
 ## The big Qustion: 
-How much more processing power/time is required to run your algorithm if we double the inputs?
+How much more processing power/time/storage is required to run your algorithm if we double the inputs?
+
