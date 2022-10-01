@@ -1,4 +1,6 @@
-10 Algorithms and data structures for competitive programming (unsure if <list> is ordered or unordered but everything is at the link below.)
+10 Algorithms and data structures for 
+competitive programming (unsure if <list> is ordered or 
+unordered but everything is at the link below.)
 
 1. Graph algorithms [10 plus ]
 2. Dynamic programming algorithms [10 plus “all”..] 
