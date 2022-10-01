@@ -1,0 +1,13 @@
+10 Algorithms and data structures for competitive programming (unsure if <list> is ordered or unordered but everything is at the link below.)
+
+1. Graph algorithms [10 plus ]
+2. Dynamic programming algorithms [10 plus “all”..] 
+3. Searching and sorting [10 plus]
+4. Number theory & other mathematical: prime numbers and prime factorization [8 Only..]
+5. Modulo arithmetic algorithms [7 Only..]
+6. Geometrical and network flow algorithms [10 plus]
+7. Data structures [10 plus]
+8. (Switched to the bottom of the list by me..) Miscellaneous [14 @ link below/ all articles on mathematical algorithms (unsure what all articles means exactly) ]
+
+Info from this link: 
+https://www.geeksforgeeks.org/top-algorithms-and-data-structures-for-competitive-programming/

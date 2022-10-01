@@ -3,6 +3,28 @@ Abstract data type: A model for data types defined by behavior. “Class of obje
 
 Data structure: ADT, in contrast to Data structures, which are concrete representations of data, and are the point of view of an implementer, not a user. 
 
+Some types of abstract data structures
+Assessed by the IB (IB standards are the intellectual property of the International Baccalaureate Organization)
+1. static and dynamic data structure
+2. arrays
+3. two-dimensional arrays
+4. stack
+5. queue
+6. linked list
+7. tree
+8. binary tree
+9. collections
+10. recursion
+
+NOT Assessed by the IB , but you should know them
+1. lists
+2. dictionaries
+3. sets
+4. tuple
+
+From link: https://computersciencewiki.org/index.php/Abstract_data_structures#Some_types_of_abstract_data_structures
+
+
 ADT is the logical picture of the data and the operations to manipulate the component elements of the data. Data structure is the actual representation of the data during the implementation and the algorithms to manipulate the data elements.
 From this link:
 * https://www.google.com/search?q=abstract+data+type+vs+data+structure&oq=abstract+data+type+vs+&aqs=chrome.0.0i512j69i57j0i512l8.6618j0j7&sourceid=chrome&ie=UTF-8
