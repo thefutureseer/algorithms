@@ -1,6 +1,6 @@
 PHP ADT deleted 
 
-Some types of abstract data structures
+Some types of data structures
 Assessed by the IB (IB standards are the intellectual property of the International Baccalaureate Organization)
 1. static and dynamic data structure
 2. arrays
