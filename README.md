@@ -1,6 +1,8 @@
 # algorithms
 
-## Constructing a list of algorithms and tests for each using Node.js jest to check the test and --watch.
+## Constructing a list of un/impoortant things about algorithms. Including actual algorithms, tests for each using Mocha, Chai and Node.js with jest to check the test and --watch to keep it running.
+
+
 
 Most of these algorithms are from Udemy course at https://www.udemy.com/course/coding-interview-bootcamp-algorithms-and-data-structure
 
