@@ -58,3 +58,4 @@ function getMaxProfit(stockPrices) {
 console.log(getMaxProfit(stockPrices));
 
 // // Returns 6 (buying for $5 and selling for $11)
+ module.export = getMaxProfit;
