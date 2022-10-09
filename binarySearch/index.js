@@ -1,3 +1,5 @@
+//IF GIVEN A SORTED ARRAY TO SEARCH USE Binary search
+
 //Take in an array and search it for a key
 //Using recursion
 //Big O(log n)
