@@ -3,6 +3,8 @@
 //Big O(n) 
 //Because doubling the number of inputs affects the growth of the algorithm proportionally.
 
+//Using a character MAP object
+
 //Given a string, return the character most commonly used in the string
 
 //PSUEDO CODE 
