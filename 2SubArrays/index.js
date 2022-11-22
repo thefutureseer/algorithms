@@ -1,6 +1,14 @@
+//sorted array = n/a
+
+//Time complexity
+//0(log(n))
+
+// and space complexity
+
+
 //Given an array and array size
 //For every array return an array of subarrays of length size 
-// ...elements per array and the final array can be one
+// ...elements per array and the final array can be less than size or even one
 
 // function chunk(arr, n) {
 //   let chunked = [];
