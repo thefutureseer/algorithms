@@ -12,6 +12,23 @@
 // 3) turn the array into a string
 // 4) return the string now reversed
 
+//Not allowed to use the reverse function:
+
+// function rev(str ) {
+//   let revStr = '';
+
+//   for (let i = str.length-1; i >= 0; i--) {
+//     //set the letter into a copy
+//    const letter = str[i];
+//   //start at the end and add each one to a new string to return
+//    revStr += letter;
+// }
+// console.log(revStr);
+// return revStr;
+// }
+
+// rev(readystr);
+
 
 //#4 
 //Answer with reduce helper method:
