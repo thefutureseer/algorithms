@@ -45,7 +45,7 @@ function getMaxProfit(stockPrices) {
   var minPrice = stockPrices[0];
   var maxProfit = stockPrices[1] - stockPrices[0];
 
-  for(let i = 1; i < stockPrices.length; i++) {
+  for(let i = 0; i < stockPrices.length; i++) {
     const currentPrice = stockPrices[i];
     const potentialProfit = currentPrice - minPrice;
 
@@ -54,7 +54,7 @@ function getMaxProfit(stockPrices) {
     minPrice = Math.min(currentPrice, minPrice);
   }
   //return maxProfit;
-  return minPrice;
+  return maxProfit;
 }
 
 console.log(getMaxProfit(stockPrices));
