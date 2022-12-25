@@ -58,4 +58,4 @@ var mergeMeetingTimes = function(arr) {
   return result;
 };
 
-// export default mergeMeetingTimes;
+module.exports = mergeMeetingTimes;
