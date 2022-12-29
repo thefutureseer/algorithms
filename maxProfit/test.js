@@ -14,7 +14,15 @@ test('Does maxprofit work', ()=>{
   expect(result).toEqual(6)
 })
 
-// test('should run example code', () => {
-//   // creates a new mocked function with no formal arguments.
-//   expect(example.function.name).toEqual('square');
-//   expect(example.function.length).toEqual(0);
+///////////Dec 28th
+
+test('returns correct max profit for given stock prices', () => {
+  expect(getMaxProfit([10, 7, 5, 8, 11, 9])).toBe(6);
+  expect(getMaxProfit([10, 9, 8, 7, 6, 5])).toBe(0);
+  expect(getMaxProfit([5, 6, 7, 8, 9, 10])).toBe(5);
+});
+
+test('throws error when given less than 2 stock prices', () => {
+  expect(() => getMaxProfit([10])).toThrow('Need more than 2 prices to get profit');
+  expect(() => getMaxProfit([])).toThrow('Need more than 2 prices to get profit');
+});
