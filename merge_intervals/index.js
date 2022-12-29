@@ -9,53 +9,78 @@
 // upon comparing the two arrays if the lowest is higher than the 
 //lowest of the second arr then shift off the two middle numbers
 
+
 var mergeMeetingTimes = function(arr) {
   var arrCopy = JSON.parse(JSON.stringify(arr));
-  var sortedArr = arrCopy.sort((a, b) => a[0]-b[0] );
-  const result = [sortedArr[0]];
+  var sortedArr = arrCopy.sort((a, b) => a[0] - b[0]);
 
+  var result = [sortedArr[0]];
 
-  //loop through result arr of arrays 
-  for (let i = 0; i <= arr.length-1; i++) {
-    //set variable to each 2 items in each array
-    let e1 = result[result.length-1][1]
-    let timeBeginning = arr[i][0];
-    let timeEnding = arr[i][1];
+  for (var i = 1; i < sortedArr.length; i++) {
+    var lastMeeting = result[result.length - 1];
+    var currentMeeting = sortedArr[i];
 
-    // if second number of the first array is lower than the first
-    //number in second array. save first array in the new aray to return
-    if (e1 >= timeBeginning) {
-      result[result.length-1][1] = Math.max(e1, timeEnding)
-      // newArrayToReturn.push([timeBeginning, timeEnding]);
-      console.log(result, 'result line 21 ONLY ')
+    if (lastMeeting[1] >= currentMeeting[0]) {
+      if (lastMeeting[1] < currentMeeting[1]) {
+        lastMeeting[1] = currentMeeting[1];
+      }
     } else {
-      result.push(arr[i])
+      result.push(currentMeeting);
     }
-
-    //check each array and compare each to see if 
-    //the first time number is within another first time
-    // if (timeBeginning <= arr[i+1][0]) {
-
-    //   if (timeEnding >= arr[i+1][0] && timeEnding <= arr[i+1][1]) {
-    //     //cut off middle number arr[i+1][0]
-    //     //by adding the first number to the newreturnarray
-    //     newArrayToReturn.push([timeBeginning, arr[i+1][1]]);
-    //     console.log('newArrayToReturn end>begin & < 2n end',newArrayToReturn);
-
-    //     //check second number second array.
-    //     if (timeEnding >= arr[i+1][1]) {
-    //       //cut off second number of second array
-    //       newArrayToReturn.push([arr[i][0], arr[i][1]]);
-    //       console.log('newArrayToReturn after time ending is > second ending',newArrayToReturn);
-    //     }
-    //   }
-    // }
-
-        //keep track of 
   }
-  console.log('REsult',result);
 
   return result;
 };
 
-module.exports = mergeMeetingTimes;
+///////////Brut force //////////
+
+// var mergeMeetingTimes = function(arr) {
+//   var arrCopy = JSON.parse(JSON.stringify(arr));
+//   var sortedArr = arrCopy.sort((a, b) => a[0]-b[0] );
+//   const result = [sortedArr[0]];
+
+
+//   //loop through result arr of arrays 
+//   for (let i = 0; i <= arr.length-1; i++) {
+//     //set variable to each 2 items in each array
+//     let e1 = result[result.length-1][1]
+//     let timeBeginning = arr[i][0];
+//     let timeEnding = arr[i][1];
+
+//     // if second number of the first array is lower than the first
+//     //number in second array. save first array in the new aray to return
+//     if (e1 >= timeBeginning) {
+//       result[result.length-1][1] = Math.max(e1, timeEnding)
+//       // newArrayToReturn.push([timeBeginning, timeEnding]);
+//       console.log(result, 'result line 21 ONLY ')
+//     } else {
+//       result.push(arr[i])
+//     }
+
+//     //check each array and compare each to see if 
+//     //the first time number is within another first time
+//     // if (timeBeginning <= arr[i+1][0]) {
+
+//     //   if (timeEnding >= arr[i+1][0] && timeEnding <= arr[i+1][1]) {
+//     //     //cut off middle number arr[i+1][0]
+//     //     //by adding the first number to the newreturnarray
+//     //     newArrayToReturn.push([timeBeginning, arr[i+1][1]]);
+//     //     console.log('newArrayToReturn end>begin & < 2n end',newArrayToReturn);
+
+//     //     //check second number second array.
+//     //     if (timeEnding >= arr[i+1][1]) {
+//     //       //cut off second number of second array
+//     //       newArrayToReturn.push([arr[i][0], arr[i][1]]);
+//     //       console.log('newArrayToReturn after time ending is > second ending',newArrayToReturn);
+//     //     }
+//     //   }
+//     // }
+
+//         //keep track of 
+//   }
+//   console.log('REsult',result);
+
+//   return result;
+// };
+
+ module.exports = mergeMeetingTimes;
