@@ -1,0 +1,25 @@
+# Intuition
+1. Describe your first thoughts on how to solve this problem. 
+  I would use a loop to iterate over the elements of the input array. 
+  For each iteration, I would slice a subarray of the desired 
+  size from the input array, and add it to the list of subarrays. 
+  I would then advance the loop index by the size of the subarray, 
+  so that the next iteration starts at the correct position in the
+  input array.
+  The final subarray may have fewer than the desired size if 
+  there are not enough elements remaining in the input array. 
+  In this case, I would add the remaining elements to a new 
+  subarray and add it to the list of subarrays.
+
+# Approach
+2. Describe your approach to solving the problem. 
+
+# Complexity
+3. Time complexity:
+
+4. Space complexity:
+
+# Code
+```
+<!-- kind of algorithm and code -->
+
