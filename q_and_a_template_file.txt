@@ -1,16 +1,16 @@
 # Intuition / forethought
-1. My first thoughts on how to solve this problem. 
+1. My first thoughts on how to solve this problem:
 
 # Approach
-2. My approach to solving the problem. 
+2. My approach to solving the problem:
 
 # Complexity
-3. Time complexity:
+3 A. Time complexity:
 
-4. Space complexity:
+3 B. Space complexity:
 
 # Code
 ```
-5. Data structures
+4 A. Data structures:
 
-6. kind of algorithm and code -->
+4 B. kind of algorithm:

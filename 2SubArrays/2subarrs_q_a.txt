@@ -47,6 +47,23 @@
   appropriate algorithm for a given problem.
 
 4. Space complexity:
+  The space complexity of the solution I described, which uses a 
+  single loop to create the subarrays, is O(m), where m is the 
+  number of subarrays created. This is because the solution creates
+  a new subarray for every size elements in the input array, and 
+  the size of the subarray list increases linearly with the number
+  of subarrays.
+
+  In general, the space complexity of an algorithm is a measure of 
+  how the amount of memory required by the algorithm increases as 
+  the size of the input data increases. It is a useful way to 
+  compare the efficiency of different algorithms, and to choose the
+  most appropriate algorithm for a given problem.
+
+  It's important to note that the space complexity of an algorithm 
+  can sometimes be more important than the time complexity, 
+  especially in resource-constrained environments such as mobile 
+  devices or embedded systems.
 
 # Code
 ```
