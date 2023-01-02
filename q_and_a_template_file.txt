@@ -1,4 +1,4 @@
-# Intuition
+# Intuition / forethought
 1. My first thoughts on how to solve this problem. 
 
 # Approach

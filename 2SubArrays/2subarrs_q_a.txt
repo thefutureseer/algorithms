@@ -1,5 +1,21 @@
-# Intuition
-1. Describe your first thoughts on how to solve this problem. 
+# Intuition / forethought
+1. Before solving this problem, I would consider it to be a fairly 
+   straightforward task that can be easily accomplished using a 
+   loop and the slice() method. It requires a basic understanding 
+   of array manipulation in JavaScript, and should not pose any 
+   significant challenges.
+
+   The instructions for solving this problem would involve 
+   iterating over the elements of the input array, using the 
+   slice() method to create a subarray of the desired size, 
+   and adding the subarray to a list of subarrays. The loop 
+   index would need to be advanced by the size of the subarray, 
+   and a check would need to be included to handle the case where 
+   the final subarray has fewer than the desired number of 
+   elements.
+
+# Approach
+2. Describe your approach to solving the problem. 
   I would use a loop to iterate over the elements of the input array. 
   For each iteration, I would slice a subarray of the desired 
   size from the input array, and add it to the list of subarrays. 
@@ -10,9 +26,6 @@
   there are not enough elements remaining in the input array. 
   In this case, I would add the remaining elements to a new 
   subarray and add it to the list of subarrays.
-
-# Approach
-2. Describe your approach to solving the problem. 
 
 # Complexity
 3. Time complexity:
