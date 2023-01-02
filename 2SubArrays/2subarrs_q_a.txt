@@ -29,10 +29,27 @@
 
 # Complexity
 3. Time complexity:
+  The time complexity of the solution I described, which uses a 
+  single loop to create the subarrays, is O(n), where n is the 
+  number of elements in the input array. This is because the loop 
+  iterates over all the elements of the input array once, and the 
+  slice operation is O(1).
+
+  This means that the time taken by the algorithm increases 
+  linearly with the size of the input array. For small arrays, 
+  the algorithm will be very fast, but for large arrays it may 
+  take longer to execute.
+
+  In general, the time complexity of an algorithm is a measure of 
+  how the running time of the algorithm increases as the size of 
+  the input data increases. It is a useful way to compare the 
+  efficiency of different algorithms, and to choose the most 
+  appropriate algorithm for a given problem.
 
 4. Space complexity:
 
 # Code
 ```
-<!-- kind of algorithm and code -->
+5. Data structures
 
+6. kind of algorithm and code -->
