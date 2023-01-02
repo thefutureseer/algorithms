@@ -28,7 +28,7 @@
   subarray and add it to the list of subarrays.
 
 # Complexity
-3. Time complexity:
+3 A. Time complexity:
   The time complexity of the solution I described, which uses a 
   single loop to create the subarrays, is O(n), where n is the 
   number of elements in the input array. This is because the loop 
@@ -46,7 +46,7 @@
   efficiency of different algorithms, and to choose the most 
   appropriate algorithm for a given problem.
 
-4. Space complexity:
+3 B. Space complexity:
   The space complexity of the solution I described, which uses a 
   single loop to create the subarrays, is O(m), where m is the 
   number of subarrays created. This is because the solution creates
@@ -65,8 +65,30 @@
   especially in resource-constrained environments such as mobile 
   devices or embedded systems.
 
-# Code
+# Code 
 ```
-5. Data structures
+4 A. Data structures:
+  1. Arrays: The input array is used to store the original data, 
+     and the subarray list is used to store the subarrays.
+  2. Loops: A loop is used to iterate over the elements of the 
+     input array and create the subarrays.
+No other data structures are used in this solution.
 
-6. kind of algorithm and code -->
+#4 B. kind of algorithm:
+      The solution I described is an example of an iterative 
+   algorithm. An iterative algorithm is an algorithm that solves 
+   a problem by repeating a process over and over until a certain 
+   condition is met.
+
+   In the case of the solution I described, the algorithm uses a 
+   loop to iterate over the elements of the input array, creating 
+   a new subarray for every size elements and adding it to the list
+   of subarrays. The loop continues until all the elements of the 
+   input array have been processed.
+
+   Iterative algorithms are a common way to solve problems in 
+   computer science, and they can be implemented using various 
+   control structures such as loops, recursive functions, and 
+   generators. They are often easier to understand and implement 
+   than more complex algorithms, and can be an efficient choice 
+   for solving many types of problems.
