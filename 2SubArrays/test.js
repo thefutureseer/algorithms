@@ -4,6 +4,29 @@ test('function chunk exists', () => {
   expect(typeof chunk).toEqual('function');
 });
 
+test('chunk creates subarrays of the correct size', () => {
+  const array = [1, 2, 3, 4, 5, 6, 7, 8];
+  const subArrays = chunk(array, 3);
+  expect(subArrays).toHaveLength(3);
+  expect(subArrays[0]).toHaveLength(3);
+  expect(subArrays[1]).toHaveLength(3);
+  expect(subArrays[2]).toHaveLength(2);
+});
+
+test('chunk creates correct subarrays', () => {
+  const array = [1, 2, 3, 4, 5, 6, 7, 8];
+  const subArrays = chunk(array, 3);
+  expect(subArrays[0]).toEqual([1, 2, 3]);
+  expect(subArrays[1]).toEqual([4, 5, 6]);
+  expect(subArrays[2]).toEqual([7, 8]);
+});
+
+test('chunk handles empty input array', () => {
+  const array = [];
+  const subArrays = chunk(array, 3);
+  expect(subArrays).toEqual([]);
+});
+
 test('chunk divides an array of 10 elements with chunk size 2', () => {
   const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   const chunked = chunk(arr, 2);
@@ -31,3 +54,4 @@ test('chunk divides an array of 13 elements with chunk size 5', () => {
 
   expect(chunked).toEqual([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13]]);
 });
+
