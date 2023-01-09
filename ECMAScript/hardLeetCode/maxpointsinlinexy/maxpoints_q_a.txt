@@ -1,0 +1,48 @@
+# Intuition
+When trying to solve this problem, my first thought was to find a way to calculate the slope of the line between each pair of points and use this information to determine which points lie on the same straight line.
+
+I also thought about using a nested loop to iterate through all the points in the array and comparing each point to the other points to find the maximum number of points that lie on the same straight line.
+
+I considered using an object to store the count of points with the same slope and using this information to find the maximum number of points that lie on the same straight line.
+
+Finally, I thought about using the sort() method to sort the points by their x-coordinates or y-coordinates and then using a nested loop to find the maximum number of points that lie on the same straight line.
+
+These were my initial thoughts on how to approach this problem. 
+
+WHAT DIDN'T WORK:..
+
+Before my final answer as far as the maxPoints function, I tried to use the slope of the line between each pair of points to determine which points lie on the same straight line.
+
+However, there were some errors in the implementation that caused the function to not work correctly. For example, in the first version of the function, I forgot to check if the x-coordinates of the current point and the other point were the same before calculating the slope of the line between the two points.
+
+In the second version of the function, I used an object to store the count of points with the same slope, but I forgot to update the count for each slope whenever a point with the same slope was found.
+
+# Approach
+My approach to solving this problem was to find a way to calculate the slope of the line between each pair of points and use this information to determine which points lie on the same straight line.
+
+To do this, I used a nested loop to iterate through all the points in the array and compare each point to the other points. For each pair of points, I calculated the slope of the line between the two points using the formula (y2 - y1) / (x2 - x1).
+
+I then used an object to store the count of points with the same slope, and I updated the count for each slope whenever a point with the same slope was found.
+
+Finally, I iterated through the object and found the maximum count of points with the same slope, and I returned the maximum count as the result of the function.
+
+I hope this helps to clarify my approach to solving the problem. Let me know if you have any other questions.
+
+# Time complexity:
+The time complexity of the my maxPoints function is O(n^2), where n is the number of points in the array. This is because the function uses two nested loops to iterate through all the points in the array and compare each point to the other points.
+
+# Space complexity:
+The space complexity of the function is O(n), because the function stores the count of points with the same slope in an object, and the size of the object is proportional to the number of points in the array.
+
+
+DATA STRUCTURES
+Arrays: 
+The function takes an array of points as input 
+and uses arrays to store each point and the coordinates 
+of each point.
+Objects: 
+The function uses an object to store the count of points with the 
+same slope.
+
+Code: 
+ECMAScript/javascript
