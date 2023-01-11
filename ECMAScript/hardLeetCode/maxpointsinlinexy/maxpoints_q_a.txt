@@ -46,3 +46,40 @@ same slope.
 
 Code: 
 ECMAScript/javascript
+
+Pseudocode:
+function maxPointsOnLine(points) {
+    let maxPoints = 0;
+    for (let i = 0; i < points.length; i++) {
+        let currPoint = points[i];
+        let slopeMap = new Map(); 
+        let samePoints = 1; 
+        let infiniteSlope = 0;
+        for (let j = i + 1; j < points.length; j++) {
+            let otherPoint = points[j];
+            if (otherPoint[0] == currPoint[0] && otherPoint[1] == currPoint[1]) {
+                samePoints++;
+                continue;
+            }
+            let slope;
+            if (otherPoint[0] == currPoint[0]) {
+                infiniteSlope++;
+                continue;
+            } else {
+                slope = (otherPoint[1] - currPoint[1]) / (otherPoint[0] - currPoint[0]);
+            }
+            if (!slopeMap.has(slope)) {
+                slopeMap.set(slope, 1);
+            } else {
+                slopeMap.set(slope, slopeMap.get(slope) + 1);
+            }
+        }
+        let pointsOnLine = samePoints;
+        for (let value of slopeMap.values()) {
+            pointsOnLine = Math.max(pointsOnLine, value + samePoints);
+        }
+        pointsOnLine = Math.max(pointsOnLine, infiniteSlope + samePoints);
+        maxPoints = Math.max(maxPoints, pointsOnLine);
+    }
+    return maxPoints;
+}

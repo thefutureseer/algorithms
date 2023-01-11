@@ -3,6 +3,8 @@
 //  * @return {number}
 //  */
 
+//BRUTE FORCE----------->
+
 function maxPoints(points) {
   let max = 0;
 
