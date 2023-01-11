@@ -1,4 +1,15 @@
 //CHECK IF THE TWO STRINGS ARE ANAGRAMS OF EACH OTHER
+// 1) One common approach is to first check that the two strings have 
+// the same length, and then to create a frequency table (or 
+// "histogram") of the characters in each string. The algorithm then 
+// compares the two frequency tables to see if they are identical. 
+
+// 1.5) A similar approach is to check if length matches,
+// sort the characters in each string and then compare the two 
+// sorted strings.
+
+// 2) A 2nd approach would be to use a hash map with the count of
+// each character in the word. 
 
 //Turn both strings into lowecase, delete all spaces and symbols
 //Check if both strings are the same size

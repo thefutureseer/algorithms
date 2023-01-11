@@ -1,5 +1,3 @@
-PHP ADT deleted 
-
 Some types of data structures
 Assessed by the IB (IB standards are the intellectual property of the International Baccalaureate Organization)
 1. static and dynamic data structure
@@ -20,3 +18,32 @@ NOT Assessed by the IB , but you should know them
 4. tuple
 
 From link: https://computersciencewiki.org/index.php/Abstract_data_structures#Some_types_of_abstract_data_structures
+
+Relation of data structure to algorithms:
+
+Sorting: 
+Algorithms such as quicksort, merge sort, and heapsort 
+all use arrays as the underlying data structure. 
+These algorithms partition and rearrange the elements in the array 
+to put them in a sorted order.
+
+Searching: 
+Algorithms such as linear search and binary search 
+can be implemented using arrays or linked lists. These algorithms 
+look for a specific value in a collection of elements.
+
+Graph traversal: 
+Algorithms such as breadth-first search and 
+depth-first search can be implemented using graph data structures 
+such as an adjacency list or an adjacency matrix.
+
+Shortest path: 
+Algorithm like Dijkstra, Bellman-Ford and others require the use 
+of priority queue, which is commonly implemented as a heap.
+
+Huffman coding: 
+It uses the binary tree, to store the frequency of characters.
+
+Hash-based search: 
+The hash table data structure is used in many algorithms such as 
+Hash-based search and many other lookups based on key-value pair
