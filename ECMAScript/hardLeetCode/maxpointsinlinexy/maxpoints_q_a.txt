@@ -83,3 +83,28 @@ function maxPointsOnLine(points) {
     }
     return maxPoints;
 }
+
+Breaking it down to solve it:
+The algorithm I described earlier is solving the problem by 
+iterating through the array of points and for each point, it 
+calculates the slope of the line formed by the current point and 
+the other points in the array, counting the number of points that 
+lie on the same line and storing that count in a map.
+
+In this algorithm, each point in the array is considered as one 
+subproblem. Because it iterates through the array of points once, 
+and for each point, it iterates through the remaining points in 
+the array and calculates the slope of the line formed by the 
+current point and the other points. So for every point in the 
+array, it checks the slope of the line with all other points in 
+the array.
+
+So the number of subproblems in this algorithm is equal to the 
+number of points in the array.
+
+That means, if the length of points array is n, the algorithm 
+will have n subproblems.
+
+It is worth mentioning that this is the worst case scenario, if 
+there are less points in the array, the algorithm will finish 
+with less subproblems.
