@@ -1,5 +1,6 @@
 # Intuition / forethought
 1. My first thoughts on how to solve this problem:
+This is a fairly simple and straight forward algorithm question. 
 
 # Approach
 2. My approach to solving the problem:
@@ -17,14 +18,61 @@
 
 # Complexity
 3 A. Time complexity:
-  O(n) Time complexity.
+In terms of time complexity, if implemented correctly the 
+algorithm has O(n) time complexity, where n is the size of the 
+input string.
+
 
 3 B. Space complexity:
+As you can see I can get a O(n) space complexity 
 
 # Code
 ```
 4 A. Data structures:
+Frequency table: 
+ A data structure that stores the number of occurrences of each 
+ character in a string.
+Sorting: 
+A data structure which rearranges the elements of a collection in
+a specific order, in this case the characters in the strings
+HashMap: 
+A data structure that uses a hash function to map keys to values, 
+it's a way of creating an associative array.
 
 4 B. kind of algorithm:
+The Anagram algorithm can be a type of string comparison algorithm. 
+It's used to determine if two given strings are anagrams of each 
+other, which means they contain the same set of characters, but 
+possibly in a different order.
 
-4 C. Breaking down how to solve this algorithm:
+Anagram algorithm is generally implemented using sorting and 
+comparison, searching, or hashing. It can be implemented as a 
+comparison-based algorithm, which compares the characters of the
+two strings, counting the frequency of each character, and then 
+comparing these counts. or it can be implemented as a search-based 
+algorithm, which tries to find a permutation of the characters in 
+the first string that matches the second string.
+
+It can also be considered as a type of matching algorithm, 
+where the goal is to match the elements of one set with another 
+set of elements or a problem of pattern matching.
+
+It's important to note that while the Anagram problem is relatively simple to understand and implement, it can become more complicated in certain scenarios, such as when the input is case-insensitive, when it contains spaces, or when it contains special characters.
+
+4 C. Breaking down how to solve this algorithm (subproblems):
+
+1) Input validation: 
+  Checking that the input strings are valid and have the same 
+  length.
+2) Creating a frequency table: 
+  Creating a data structure to count the occurrences of each 
+  character in the input strings.
+3) Comparing the frequency tables: 
+  Iterating over the characters in each frequency table and 
+  comparing their counts.
+4) Handling edge cases and special characters: Handling cases where 
+  the input strings have different capitalization or contain 
+  special characters or spaces.
+5) Return the final result: 
+  Based on the comparison return true or false depending on the 
+  result.

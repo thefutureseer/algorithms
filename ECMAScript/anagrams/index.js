@@ -11,10 +11,6 @@
 // 2) A 2nd approach would be to use a hash map with the count of
 // each character in the word. 
 
-//Turn both strings into lowecase, delete all spaces and symbols
-//Check if both strings are the same size
-//Check if same size strings by number of keys then sort both strings the same way to check if they have the same characters
-//Build a character map out of both
 
 // function anagrams(stringA, stringB) {
 //   //Run helper function on each string

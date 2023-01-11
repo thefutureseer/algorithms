@@ -15,4 +15,4 @@
 
 4 B. kind of algorithm:
 
-4 C. Breaking down how to solve this algorithm:
+4 C. Breaking down how to solve this algorithm (subproblems):
