@@ -1,0 +1,16 @@
+When trying to solve a difficult algorithm, 
+the first thing I would do is to break down the problem into 
+smaller, more manageable subproblems. Then I try to find 
+solutions for each subproblem separately. Once I have solutions 
+for all the subproblems, I try to combine them in order to 
+solve the overall problem.
+
+Additionally, I would check to see if there are any similar 
+problems or solutions that have been previously published, 
+and see if I can adapt those solutions to fit my problem.
+
+I would also try to understand the time and space complexity of 
+the problem and try to find an optimized solution.
+
+Also a key is to test the implementation with sample test cases 
+and debug them if needed.
