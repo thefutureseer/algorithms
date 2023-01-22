@@ -1,3 +1,5 @@
+-- Unfinished..
+
 type Direction = String
 type Path = [Direction]
 

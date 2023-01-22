@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/thefutureseer/algorithms/issues"
   },
-  "homepage": "https://github.com/thefutureseer/algorithms#readme"
+  "homepage": "https://github.com/thefutureseer/algorithms#readme",
+  "dependencies": {
+    "avl-tree-js": "^0.0.8"
+  }
 }

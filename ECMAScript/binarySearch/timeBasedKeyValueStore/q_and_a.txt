@@ -1,0 +1,89 @@
+# Intuition / forethought
+1. My first thoughts on how to solve this problem:
+I know set and get operations will need to be implemented. 
+Set and get operations are the core functionality 
+of the Time-Based Key-Value Store problem. They are 
+necessary because the problem requires the storage and 
+retrieval of key-value pairs along with timestamps. 
+
+# Approach
+2. My approach to solving the problem:
+designing a key-value store that supports two operations:
+
+Use a hashmap to store the key-value pairs and a balanced tree 
+(e.g. AVL tree) or a self-balancing tree (e.g. Red-black tree) 
+to store the timestamps.
+
+  1. set(string key, string value, int timestamp) : 
+stores the key and value, along with a timestamp indicating 
+when the value was set.
+
+  2. get(string key, int timestamp): returns the value of 
+the key at the given timestamp, or returns "null" if 
+the key has not been set or the timestamp is less than 
+the earliest timestamp stored for the key.
+
+Note: 
+JavaScript has built-in Map and Set classes that 
+can be used to implement a hashmap and set respectively 
+and also has support for Map and Set with a timestamp in 
+the Map class, but the performance is not as good as using 
+a balanced tree to store the timestamps.
+
+# Complexity
+3 A. Time complexity:
+Time complexity for both set and get operations is O(log n)
+
+3 B. Space complexity:
+O(n), where n is the total number of key-value pairs. 
+The hashmap will take O(n) space to store n key-value 
+pairs and the tree will take O(n) space to store n timestamps.
+
+It is important to note that this is the **worst-case 
+space complexity. The actual space complexity will depend on 
+the distribution of the keys and timestamps, and it can be 
+less than O(n) if the keys and timestamps are not uniformly 
+distributed. For example, if the keys are distributed such 
+that some keys are more common than others, then the hashmap 
+will not need to store all n key-value pairs, and the actual 
+space complexity will be less than O(n). Similarly, if the 
+timestamps are distributed such that some timestamps are more 
+common than others, then the balanced tree will not need to 
+store all n timestamps, and the actual space complexity will 
+be less than O(n).
+
+# Code
+```
+4 A. Data structures:
+Two main data structures. 
+1. Hashmap to store key-value pairs, and 
+2. a balanced tree to store timestamps in order to efficiently 
+store and retrieve key-value pairs along with timestamps.
+
+4 B. kind of algorithm:
+SEARCH / HASH 
+
+4 C. Breaking down how to solve this algorithm (subproblems):
+
+ 4 D. Problem it is used to solve:
+The Time-Based Key-Value Store problem is typically 
+used to test a candidate's ability to design a data 
+structure that can efficiently store and retrieve 
+key-value pairs along with timestamps. It is a common 
+problem that is used in coding interviews and competitions, 
+as well as in computer science courses to teach concepts 
+such as data structures, algorithms, and time complexity.
+
+This problem is also related to the real-world use case of 
+time-series data. Time-series data is a collection of data 
+points that are collected and recorded at specific time 
+intervals. Many systems, such as sensor networks, financial 
+systems, and internet of things (IoT) devices, generate and 
+store time-series data. Storing and querying this data efficiently
+is an important task for many applications.
+
+The Time-Based Key-Value Store problem can be seen as a 
+simplified version of time-series data storage and retrieval 
+problem. It tests the understanding of how to efficiently 
+store key-value pairs with timestamps and retrieve the 
+value of a key at a specific timestamp.
