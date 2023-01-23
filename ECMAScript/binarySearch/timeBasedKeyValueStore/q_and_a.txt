@@ -1,5 +1,5 @@
 # Intuition / forethought
-1. My first thoughts on how to solve this problem:
+ 1. My first thoughts on how to solve this problem:
 I know set and get operations will need to be implemented. 
 Set and get operations are the core functionality 
 of the Time-Based Key-Value Store problem. They are 
@@ -7,12 +7,14 @@ necessary because the problem requires the storage and
 retrieval of key-value pairs along with timestamps. 
 
 # Approach
-2. My approach to solving the problem:
+ 2. My approach to solving the problem:
 designing a key-value store that supports two operations:
 
-Use a hashmap to store the key-value pairs and a balanced tree 
-(e.g. AVL tree) or a self-balancing tree (e.g. Red-black tree) 
-to store the timestamps.
+Use a plain JavaScript object or a hashmap to store 
+the key-value pairs and a balanced tree 
+(e.g. AVL tree/hashmap libraries) or a 
+self-balancing tree (e.g. Red-black tree) to 
+store the timestamps.
 
   1. set(string key, string value, int timestamp) : 
 stores the key and value, along with a timestamp indicating 
@@ -31,10 +33,10 @@ the Map class, but the performance is not as good as using
 a balanced tree to store the timestamps.
 
 # Complexity
-3 A. Time complexity:
+ 3 A. Time complexity:
 Time complexity for both set and get operations is O(log n)
 
-3 B. Space complexity:
+ 3 B. Space complexity:
 O(n), where n is the total number of key-value pairs. 
 The hashmap will take O(n) space to store n key-value 
 pairs and the tree will take O(n) space to store n timestamps.
@@ -56,14 +58,52 @@ be less than O(n).
 ```
 4 A. Data structures:
 Two main data structures. 
-1. Hashmap to store key-value pairs, and 
-2. a balanced tree to store timestamps in order to efficiently 
+ 1. Hashmap to store key-value pairs, and 
+ 2. a balanced tree to store timestamps in order to efficiently 
 store and retrieve key-value pairs along with timestamps.
 
 4 B. kind of algorithm:
 SEARCH / HASH 
 
 4 C. Breaking down how to solve this algorithm (subproblems):
+ 1. Storing key-value pairs with timestamps: 
+The algorithm needs to store key-value pairs where the keys 
+are timestamps and the values are the values associated with 
+the corresponding timestamp.
+
+ 2. Sorting the key-value pairs: 
+The algorithm needs to maintain 
+a sorted list of key-value pairs in order to perform efficient 
+search operations.
+
+ 3. Inserting key-value pairs: 
+The algorithm needs to provide a method for inserting key-value 
+pairs into the store.
+
+ 4. Retrieving values associated with a given timestamp: 
+The algorithm needs to provide a method for retrieving the 
+value associated with a given timestamp.
+
+ 5. Searching for the key-value pair with the largest
+    timestamp less than or equal to the given timestamp: 
+The algorithm needs to be able to search for the key-value 
+pair with the largest timestamp less than or equal to 
+the given timestamp.
+
+ 6. Handling non-uniformly distributed timestamps:
+The algorithm needs to be able to handle the case where the 
+timestamps are not uniformly distributed.
+
+ 7. Time and space complexity: 
+The algorithm needs to have a reasonable time and space complexity.
+
+ 8. Exporting the class: 
+The algorithm needs to export the TimeMap class.
+
+ 9. Unit testing: 
+The algorithm needs to have unit tests to ensure that it 
+works correctly.
+
 
  4 D. Problem it is used to solve:
 The Time-Based Key-Value Store problem is typically 
