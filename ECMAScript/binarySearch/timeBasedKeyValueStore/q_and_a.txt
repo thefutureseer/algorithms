@@ -1,3 +1,9 @@
+Lucky for the reader as well as myself a common pattern within 
+these Q & A files is so much repitition. I think I love it due to 
+how it possible that you will learn this entire algorithm and 
+never forget it by the time your done thinking through this 
+Q & A file..
+
 # Intuition / forethought
  1. My first thoughts on how to solve this problem:
 I know set and get operations will need to be implemented. 

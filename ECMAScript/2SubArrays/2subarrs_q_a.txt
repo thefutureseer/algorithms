@@ -1,3 +1,9 @@
+Lucky for the reader as well as myself a common pattern within 
+these Q & A files is so much repitition. I love it so far because 
+you may learn this entire algorithm and never forget it by the 
+time your done thinking through this Q & A file..
+
+
 # Intuition / forethought
 1. Before solving this problem, I would consider it to be a fairly 
    straightforward task that can be easily accomplished using a 
