@@ -5,7 +5,7 @@
 Node terminal command:
 jest [algorithmFolder]/[algorithmTestFile.js] --watch
 
-## Q & A file will be added to each folder upon completion
+## Q & A file with everything you ever wanted to know will be added to each folder upon completion
 
 ## Goal: The ability to identify runtime complexity.
 
