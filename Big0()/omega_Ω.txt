@@ -1,0 +1,24 @@
+OMEGA ( Ω )
+
+The Ω (omega) symbol that mathematicians use to talk about lower bounds 
+actually comes from the last letter of the Greek alphabet , which 
+is a set of letters that Greek people used to write many years 
+ago. The letter Ω is pronounced "omega" and looks like a squiggly
+"W". Mathematicians use this letter to talk about lower bounds 
+because it looks like an upside-down "V", which kind of represents 
+a lower limit or floor. So, just like how we use the letter "A" 
+to start words like "apple" or "animal", mathematicians use the 
+letter Ω to talk about lower bounds.
+
+Mathematicians use the Ω to talk about how long it takes for 
+some problems to be solved. It helps us know how much time we 
+need to spend to finish a task, and how hard the task is to 
+complete.
+
+When you see the symbol Ω next to an algorithm, it means that the 
+algorithm needs at least a certain amount of time to solve a 
+problem. Just like how some puzzles are really hard and take a 
+long time to finish, some problems are also really hard for a 
+computer to solve and take a long time. The Ω helps us understand 
+how much time the algorithm needs to solve a problem, so we can 
+choose the best algorithm to use.
