@@ -1,0 +1,65 @@
+
+BINARY SEARCH TREE:
+
+A binary search tree is a data structure used for efficient 
+searching, insertion and deletion of elements. 
+It is a binary tree where each node is always in order, has at 
+most two children, and the left child is always less than the 
+parent and the right child is always greater than the parent.
+
+This ordering property allows for efficient searching because 
+the elements can be compared against the current node and the 
+search can be continued in the left or right subtree depending 
+on whether the element is smaller or greater than the current 
+node, respectively. This results in a time complexity of 
+O(log n) for searching, inserting and deleting elements in a 
+balanced binary search tree.
+
+Some common operations on a binary search tree include:
+
+Search: 
+Starting from the root node, compare the search key with the value of the current node. If they are equal, the search is successful. If the search key is less than the value of the current node, search the left subtree. If the search key is greater than the value of the current node, search the right subtree.
+
+Insert: 
+Starting from the root node, compare the value to be inserted with the value of the current node. If the value is less than the current node, move to the left subtree. If the value is greater than the current node, move to the right subtree. Repeat until a leaf node is reached, and then insert the new node as the left or right child of the leaf node depending on whether the value is less than or greater than the leaf node.
+
+Delete: 
+There are three cases to consider when deleting a node from a binary search tree. If the node has no children, simply remove it. If the node has one child, replace it with its child. If the node has two children, find the successor (the smallest node in the right subtree) and replace the node to be deleted with the successor. Then, delete the successor node.
+
+Minimum and maximum: 
+The minimum operation returns the node with the smallest value in the binary search tree. The maximum operation returns the node with the largest value in the binary search tree. These operations can be implemented by traversing the left or right subtree, respectively, until a leaf node is reached.
+
+Successor and predecessor: 
+The successor of a node is the node with the smallest value greater than the current node's value. The predecessor of a node is the node with the largest value smaller than the current node's value. These operations are useful for finding the next or previous element in an ordered set of elements. The successor and predecessor operations can be implemented by traversing the right or left subtree, respectively, and then finding the minimum or maximum value in that subtree.
+
+Height and depth: 
+The height of a binary search tree is the maximum number of edges between the root node and a leaf node. The depth of a node is the number of edges between the root node and that node. These operations are useful for determining the efficiency of the binary search tree and for understanding the structure of the tree.
+
+Traversal: 
+There are several ways to traverse a binary search tree. In-order traversal, as mentioned earlier, visits the nodes in ascending order of their values. Pre-order traversal visits the current node before its child nodes. Post-order traversal visits the current node after its child nodes. Level-order traversal visits the nodes in order of their level, from the root node down to the leaf nodes. These traversal operations can be useful for performing various operations on the binary search tree, such as printing the elements or copying the tree.
+
+It's important to note that the efficiency of a binary search 
+tree depends on how balanced the tree is. If the tree is highly 
+unbalanced, the time complexity can approach O(n) for some 
+operations, which is the same as a simple linked list. To maintain 
+balance, various self-balancing binary search tree algorithms have been developed, such as AVL trees and Red-Black trees.
+
+
+# Intuition / forethought
+1. My first thoughts on how to solve this problem:
+
+# Approach
+2. My approach to solving the problem:
+
+# Complexity
+3 A. Time complexity:
+
+3 B. Space complexity:
+
+# Code
+```
+4 A. Data structures:
+
+4 B. kind of algorithm:
+
+4 C. Breaking down how to solve this algorithm (subproblems):

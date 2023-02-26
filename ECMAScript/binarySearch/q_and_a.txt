@@ -1,7 +1,7 @@
 You may learn this entire algorithm and never forget it by the 
 time your done thinking through this Q & A file and implementing it..
 
-BINARY SEARCH TREE:
+BINARY SEARCH:
 
 
 # Intuition / forethought

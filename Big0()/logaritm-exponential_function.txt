@@ -1,0 +1,35 @@
+LOGARITHM AND EXPONENTIAL FUNCTION
+
+To learn Logarithm (logaritmic function) first lets look at 
+exponential function (exponential equation). Note: Exponential 
+equations (exponential functions) are a specific type of equation 
+that involve exponential functions. A mathematical function is 
+like a magic machine that changes one number into another number.
+
+
+Have you ever counted by multiplying a number by itself over and 
+over again? For example, counting by twos: 2, 4, 8, 16, 32, 64,
+and so on. This is called exponential growth, where a number is 
+multiplied by itself many times.
+
+An exponential function is like the magical machine for exponents
+that does this multiplication for us! Instead of having to 
+multiply a number by itself many times, we can just write an 
+exponential function and it will do the multiplication for us.
+
+An exponential function is a bit like a special rule that we can 
+use to figure out what happens when we multiply a number by itself 
+a certain number of times. The rule looks like this: y = b^x, 
+where b is a number (called the base) and x is a number (called 
+the exponent).
+
+For example, if b is 2 and x is 3, then the exponential function 
+would be y = 2^3. This means that we need to multiply 2 by itself 
+3 times, which gives us the answer of 8.
+
+Exponential functions are used in many different ways, like 
+measuring how fast a population is growing or how loud a sound is. 
+But the important thing to remember is that an exponential 
+function helps us figure out what happens when we multiply a 
+number by itself many times, without having to do all the 
+multiplication ourselves.
