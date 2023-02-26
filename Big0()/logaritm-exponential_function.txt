@@ -33,3 +33,17 @@ But the important thing to remember is that an exponential
 function helps us figure out what happens when we multiply a 
 number by itself many times, without having to do all the 
 multiplication ourselves.
+
+LOGARITHM (logaritmic function)
+A logarithm is kind of like the opposite of exponential growth. 
+It helps us figure out how many times we need to multiply a 
+certain number by itself to get another number. So if we know 
+that 2 x 2 x 2 x 2 = 16, we can say that the logarithm of 16 to 
+the base 2 is 4, because we multiplied 2 by itself 4 times to 
+get 16.
+
+Logarithms are used in many different ways, like measuring how 
+loud a sound is or how much a population is growing. But the 
+important thing to remember is that a logarithm helps us figure 
+out how many times we need to multiply a number by itself to get 
+another number.
