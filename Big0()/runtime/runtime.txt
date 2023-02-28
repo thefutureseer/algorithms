@@ -1,5 +1,38 @@
 
-~RUNTIME COMPLEXITY~ Generally we want to look at worst-case performance.
+~RUNTIME COMPLEXITY~ 
+When analyzing the runtime complexity of an 
+algorithm, we generally look at the following:
+
+Input size: 
+This is the size of the input data that the algorithm operates on,
+such as the number of elements in an array, the length of a 
+string, or the number of nodes in a tree.
+
+Basic operations: 
+These are the fundamental operations that the algorithm performs, 
+such as arithmetic operations, comparisons, and assignments.
+
+Dominant operations: 
+These are the operations that contribute the most to the overall 
+runtime of the algorithm, based on the input size. For example, 
+in a sorting algorithm, the comparison operation may dominate 
+the runtime.
+
+Worst-case scenario: 
+This is the scenario in which the algorithm takes the longest 
+time to complete, based on the input size. It is important to 
+consider the worst-case scenario because it represents the upper 
+bound on the runtime of the algorithm.
+
+Asymptotic analysis: 
+This is the process of analyzing the performance of an algorithm 
+as the input size approaches infinity. Asymptotic analysis is 
+useful because it allows us to compare the performance of 
+different algorithms without worrying about the specific input size.
+
+By considering these factors, we can determine the runtime 
+complexity of an algorithm and compare the performance of 
+different algorithms.
 
 
 NOTE on Big O:

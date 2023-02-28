@@ -1,0 +1,114 @@
+Once we have analyzed the basic operations performed by an 
+algorithm, we can add them up and express the total number of 
+operations as a function of the input size. The resulting 
+function gives us the runtime complexity of the algorithm. We can 
+use the analogy of sorting a pile of toys. Just like we can 
+break down the process of sorting toys into basic actions (such 
+as looking at a toy, comparing it to another toy, and swapping 
+two toys), we can break down the process of sorting an array 
+of numbers into basic operations in JavaScript. By counting 
+how many times each operation is performed, we can estimate 
+how long it will take to sort a larger pile of toys or a 
+longer array of numbers. By simplifying the count to its 
+most important term, we can quickly compare different sorting 
+methods and choose the most efficient one for our needs.
+
+In JavaScript, some of the basic operations that can contribute 
+to the runtime complexity of an algorithm include:
+
+(Constant time = O(1))
+Assignment (=): 
+Assigning a value to a variable or object property.
+
+(Constant time = O(1))
+Comparison (==, !=, ===, !==, <, >, <=, >=): 
+Comparing two values for equality or ordering.
+
+(Constant time = O(1))
+Arithmetic (+, -, *, /, %, ++, --): 
+Performing basic arithmetic operations on numeric values.
+
+(Constant time = O(1))
+Logical (&&, ||, !): 
+Performing logical operations on boolean values.
+
+(Constant time = O(1))
+Bitwise (&, |, ^, ~, <<, >>, >>>):
+Performing bitwise operations on integer values.
+
+(Constant time = O(1))
+Control flow ~
+(if, else, for, while, switch, case, break, continue, return): 
+Controlling the flow of program execution based on conditional 
+statements or loops.
+
+(Constant time = O(1). Constant time, but can vary depending on 
+the implementation of the function being called)
+Function calls: 
+Invoking a function and passing arguments.
+
+( Constant time = O(1), but can vary depending on the complexity 
+of the object being created.)
+Object creation: 
+Creating new objects using constructors or literals. 
+
+(runtime Varies depending on the specific operation and the 
+size of the array being processed, but is typically proportional 
+to the number of elements in the array.)
+
+Array operations:
+(push(), pop(), shift(), unshift(), splice(), 
+slice(), concat(), join(), indexOf(), forEach(), map(), 
+reduce(), filter(), sort(), reverse()): 
+Performing operations on arrays, such as adding or removing 
+elements, iterating over elements, or sorting the array.
+
+O(1) vs O(n):
+O(n) represents a time complexity that grows linearly with the size of the input, while O(1) represents a time complexity that remains constant regardless of the input size.
+
+ALSO:
+Looping through an array: O(n)
+Creating a new array: O(n)
+Concatenating two arrays: O(n)
+Searching an unsorted array: O(n)
+
+
+Searching a sorted array using binary search: O(log n)
+
+
+Adding an element to the end of an array: O(1) (amortized)
+Removing an element from the end of an array: O(1)
+
+
+Adding an element to the beginning of an array: O(n)
+Removing an element from the beginning of an array: O(n)
+
+
+The equation for the number of basic operations performed by 
+an algorithm can be expressed as a function of the input size, 
+typically denoted as n. The exact equation will depend on the 
+algorithm and the specific operations performed, but some 
+examples include:
+
+O(n): The number of basic operations grows linearly with the
+input size, such as when iterating over an array or a loop 
+with n iterations.
+
+O(n^2): The number of basic operations grows 
+quadratically with the input size, such as when 
+performing nested loops or comparing every element 
+in an array to every other element.
+
+O(log n): The number of basic operations grows 
+logarithmically with the input size, such as when 
+performing binary search or divide-and-conquer algorithms.
+
+O(1): The number of basic operations is constant regardless 
+of the input size, such as when performing a single operation 
+on a fixed value.
+
+By analyzing the basic operations performed by an algorithm 
+and expressing the total number of operations as a function 
+of the input size, we can determine the Big O notation and 
+the runtime complexity of the algorithm.
+

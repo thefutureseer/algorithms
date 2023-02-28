@@ -1,0 +1,23 @@
+While measuring the time taken by specific operations or sections of code can be a helpful tool for analyzing the performance of our code, it is not sufficient to determine the runtime complexity of an algorithm.
+
+To determine the runtime complexity of an algorithm, we need to analyze the number of basic operations performed by the algorithm as a function of the input size. This involves analyzing the algorithm's logic and structure, rather than measuring the time taken by specific operations.
+
+That being said, if we do want to measure the time taken by all operations in our code, we can wrap the code in console.time() and console.timeEnd() statements, like so:
+
+console.time("overall");
+
+console.time("operation1");
+// perform operation 1
+console.timeEnd("operation1");
+
+console.time("operation2");
+// perform operation 2
+console.timeEnd("operation2");
+
+// more operations...
+
+console.timeEnd("overall");
+
+In this example, we wrap the entire code block in a console.time() statement labeled "overall", and then wrap each individual operation in console.time() and console.timeEnd() statements with their own labels.
+
+This technique can be useful for identifying the most time-consuming operations in our code, and optimizing them for better performance. However, it is important to keep in mind that the time taken by specific operations can be affected by many factors, and may not accurately reflect the overall runtime complexity of the algorithm. Therefore, it should be used in conjunction with other techniques for analyzing and optimizing the runtime complexity of our algorithms.
