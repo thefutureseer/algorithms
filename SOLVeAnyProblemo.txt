@@ -1,3 +1,31 @@
+The first thing to think about 
+when solving any algorithm is to understand the problem statement clearly. 
+This involves reading and analyzing the problem statement, and identifying 
+the input, output, 
+and any constraints or requirements that the solution should meet.
+
+Once you have a clear understanding of the problem, 
+the next step is to determine an appropriate algorithmic approach to solving it. 
+This may involve breaking down the problem into smaller sub-problems, 
+identifying patterns or regularities in the input data, or applying 
+established algorithmic techniques or data structures to the problem.
+
+After identifying the approach, 
+the next step is to implement the algorithm in code. 
+This involves writing the code in the appropriate programming language, ensuring 
+that it meets the requirements of the problem, and testing it against sample 
+inputs and edge cases to verify its correctness.
+
+Finally, 
+it is important to analyze the time and space complexity of the algorithm 
+to ensure that it is efficient and scalable for larger input sizes.
+
+Overall, 
+the key to solving any algorithm is to approach it systematically and logically, 
+and to break it down into smaller, more manageable steps.
+
+
+PROBLEM SOLVING
 1) Define the problem: 
 Start by clearly defining the problem 
 you are facing. Pinpoint the essence and 
