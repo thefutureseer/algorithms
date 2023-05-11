@@ -1,0 +1,71 @@
+
+An AI algorithm is like a 
+set of instructions that 
+tells a computer how to do 
+something all by itself, 
+without a person telling it 
+what to do every step of 
+the way. It's like a recipe 
+for a robot's brain that 
+helps it learn and make 
+decisions on its own, just 
+like you learn and make 
+decisions too. The robot 
+follows the recipe to figure 
+out how to do things like 
+recognize pictures, talk 
+like a person, or even play 
+games. It's kind of like how 
+you follow a recipe to make 
+a cake or build a tower out 
+of blocks.
+
+
+A robot can figure out many 
+different things depending on 
+how it has been programmed and 
+what kind of sensors it has. 
+For example, a robot with a 
+camera and image recognition 
+algorithm can figure out what 
+kind of object it is looking at, 
+such as a cat or a car. A robot 
+with a microphone and speech 
+recognition algorithm can figure 
+out what someone is saying to 
+it and respond appropriately. 
+A robot with sensors for 
+temperature, humidity, and light 
+can figure out the best conditions 
+for growing plants. There are 
+many other things a robot can 
+figure out depending on its design 
+and programming, and researchers 
+are always working to improve 
+their capabilities.
+
+Here's an example of a simple AI 
+algorithm called a decision tree, 
+which can be used to make decisions 
+based on a set of rules:
+
+Let's say we have an AI algorithm to 
+determine whether or not someone 
+should go outside based on the weather. 
+The decision tree might look something 
+like this:
+
+Is it raining? 
+   /       \
+ Yes        No
+ /           \
+Stay inside   Is it sunny?
+              /        \
+            Yes         No
+            /           \
+          Go outside   Stay inside
+
+
+Is it raining?
+Is it sunny?
+Should you go outside or stay inside?
