@@ -13,6 +13,7 @@ training set. For example, the k-NN algorithm
 can be used to classify emails as spam or not 
 spam based on the words in the email.
 
+MindsDB shows an easy to set up example of this:
 In regression problems, the goal is to predict 
 a continuous value for a new data point based 
 on the features of the data point and the values 
@@ -27,31 +28,84 @@ range of problems in which we want to make
 predictions based on similar examples in a 
 labeled dataset.
 
-Image classification: 
-The k-NN algorithm can be used to classify 
-images into different categories based on 
-their features, such as the colors and shapes 
-of objects in the image.
+1. Image Classification:
+Google: 
+Google's image search functionality utilizes 
+k-NN algorithms to match and classify images 
+based on visual similarity.
+Pinterest: 
+Pinterest employs k-NN algorithms to classify 
+and recommend visually similar images to its users.
 
-Recommender systems: 
-The k-NN algorithm can be used to recommend 
-products or services to users based on the 
-preferences of similar users in a dataset.
+2. Recommender Systems:
+Netflix: 
+Netflix uses collaborative filtering techniques, 
+including variants of k-NN, to provide personalized 
+movie and TV show recommendations to its users.
+Amazon:
+Amazon employs k-NN algorithms to power its 
+recommendation engine, suggesting products 
+based on the browsing and purchasing history 
+of similar customers.
 
-Anomaly detection: 
-The k-NN algorithm can be used to detect 
-outliers or anomalies in a dataset by 
-identifying data points that are significantly 
-different from their neighbors.
+3. Anomaly Detection:
+PayPal: 
+PayPal uses k-NN algorithms for fraud detection, 
+identifying suspicious transactions by comparing 
+patterns and anomalies to previously observed 
+fraudulent activities.
+Credit card companies: 
+Major credit card companies employ k-NN algorithms 
+to detect fraudulent transactions by analyzing 
+spending patterns and identifying outliers.
 
-Clustering: 
-The k-NN algorithm can be used to group similar 
-data points into clusters based on their features.
+4. Text Classification:
+Google: 
+Google employs k-NN algorithms for text classification 
+tasks, such as spam filtering in Gmail, sentiment 
+analysis in Google News, or categorization in Google Search.
+Facebook: 
+Facebook utilizes k-NN algorithms for content recommendation, 
+including personalized news feed recommendations based on text 
+similarity and user interactions.
 
-Bioinformatics: 
-The k-NN algorithm can be used to classify genes 
-or proteins into different categories based on 
-their features and functions.
+5. Collaborative Filtering:
+LinkedIn: 
+LinkedIn leverages k-NN algorithms to provide 
+personalized job recommendations and suggest 
+relevant connections based on the profiles and 
+activities of similar users.
+Spotify: 
+Spotify uses k-NN algorithms in its music 
+recommendation system, suggesting songs and 
+playlists based on the listening preferences 
+of users with similar taste.
+
+Clustering:
+Google: 
+Google uses k-NN algorithms for clustering 
+web pages in search results. By grouping 
+similar pages together based on content 
+similarity, they can provide more relevant 
+search results and improve user experience.
+Facebook: 
+Facebook utilizes k-NN algorithms for clustering 
+similar user profiles and interests to enable 
+targeted advertising and content recommendations.
+
+
+Bioinformatics:
+Illumina: 
+Illumina, a leading genomics company, applies 
+k-NN algorithms in bioinformatics for tasks 
+such as gene expression analysis, DNA sequence 
+alignment, and disease classification based on 
+genetic data.
+DNAnexus: 
+DNAnexus is a bioinformatics platform that uses 
+k-NN algorithms for analyzing genomic and biomedical 
+data, aiding in tasks such as variant calling, 
+population genetics, and clinical research.
 
 These are just a few examples, 
 but the k-NN algorithm can be 
@@ -97,7 +151,7 @@ want to choose a new toy that is similar
 to their favorites, you might choose a blue, 
 round, and small toy from your collection.
 
-It can be thought of as atwo-step process:
+It can be thought of as a two-step process:
 
 During the training phase, the algorithm 
 simply stores the labeled data points in 
