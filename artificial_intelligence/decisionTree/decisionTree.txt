@@ -1,0 +1,28 @@
+
+DECISION TREE: 
+Here's an example of a simple AI 
+algorithm called a decision tree, 
+which can be used to make decisions 
+based on a set of rules:
+
+Let's say we have an AI algorithm to 
+determine whether or not someone 
+should go outside based on the weather. 
+The decision tree might look something 
+like this:
+
+Is it raining? 
+   /       \
+ Yes        No
+ /           \
+Stay inside   Is it sunny?
+              /        \
+            Yes         No
+            /           \
+          Go outside   Stay inside
+
+
+Is it raining?
+Is it sunny?
+Should you go outside or stay inside?
+
