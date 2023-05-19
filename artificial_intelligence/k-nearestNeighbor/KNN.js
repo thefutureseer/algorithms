@@ -1,4 +1,3 @@
-
 // Here's a simple pseudocode representation 
 // of the k-NN algorithm:
 
@@ -11,7 +10,6 @@
 //     let distance = calculateDistance(inputPoint, labeledPoint);
 //     distances.push({ point: labeledPoint, distance: distance });
 //   }
-
 //   // Sort the labeled data points by distance to the input point
 //   distances.sort((a, b) => a.distance - b.distance);
 
@@ -41,8 +39,6 @@
 //   }
 //   return Math.sqrt(sum);
 // }
-
-
 
 function kNN(inputPoint, labeledData, k) {
   let distances = [];
