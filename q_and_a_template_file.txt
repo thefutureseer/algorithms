@@ -1,11 +1,33 @@
-Lucky for the reader as well as myself a common pattern within 
-these Q & A files is so much repitition. I love it so far because 
-you may learn this entire algorithm and never forget it by the 
+You may learn this entire algorithm and never forget it by the 
 time your done thinking through this Q & A file..
 
 
-# Intuition / forethought
-1. My first thoughts on how to solve this problem:
+#1 Intuition, forethought & 
+first thoughts on how to solve this problem:
+  a. Intuition: 
+      Intuition as instinctive understanding or gut 
+      feeling about the problem. It comes from previous 
+      experiences, knowledge, and patterns observed. 
+      Intuition can help guide you in making initial 
+      assumptions or identifying potential solutions 
+      based on your subconscious understanding of the 
+      problem.
+  b. Forethought:
+      Forethought involves thinking ahead and 
+      considering different aspects of the problem. 
+      It involves planning, anticipating challenges, 
+      and envisioning potential solutions. Forethought 
+      can help you prepare a strategy, break down the 
+      problem into manageable parts, and foresee any 
+      potential roadblocks or considerations.
+  c. First Thoughts: 
+      First thoughts are the initial ideas or approaches 
+      that come to your mind when you encounter a problem. 
+      They can be spontaneous and based on your immediate 
+      understanding of the problem. First thoughts are 
+      valuable because they give you a starting point to 
+      work from and can help trigger further exploration 
+      and analysis.
 
 # Approach
 2. My approach to solving the problem:
