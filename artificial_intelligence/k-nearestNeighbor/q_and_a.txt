@@ -1,5 +1,79 @@
-# Intuition / forethought
-1. My first thoughts on how to solve this problem:
+#1 Intuition, forethought and 
+first thoughts on how to solve this problem:
+  a.  Similarity in feature space: 
+    Intuitively, data points that are 
+    close to each other in the feature 
+    space are likely to have similar 
+    characteristics. This intuition 
+    drives the distance calculation 
+    in k-NN, where the algorithm 
+    measures the similarity or 
+    dissimilarity between data 
+    points to determine their 
+    proximity.
+
+  b. Local patterns and neighborhoods: 
+    Intuitively, points in close proximity 
+    to each other are more likely to share 
+    similar class labels. This notion of
+    neighborhood and local patterns is
+    fundamental in k-NN. The algorithm
+    considers the k nearest neighbors 
+    of a new data point to make predictions 
+    based on the majority class among those 
+    neighbors.
+
+  c. Importance of parameter k: 
+    Intuitively, the choice of the 
+    parameter k influences the 
+    decision-making process. A 
+    smaller value of k considers 
+    only a few nearest neighbors, 
+    making predictions more sensitive 
+    to local variations. On the other 
+    hand, a larger value of k considers 
+    a broader range of neighbors, 
+    potentially providing a more 
+    stable decision boundary.
+
+  d. Voting and consensus: 
+    Intuitively, the majority voting aspect 
+    of k-NN relies on the notion that a data 
+    point is likely to belong to the same 
+    class as its nearest neighbors. The 
+    algorithm assigns the class label that 
+    occurs most frequently among the k nearest 
+    neighbors, emphasizing the importance of 
+    consensus in determining the prediction.
+      1. Voting: 
+          Voting is a decision-making mechanism 
+         used in k-NN to determine the class label of 
+         a new data point. When predicting the class of 
+         the new point, the algorithm looks at the class 
+         labels of its k nearest neighbors. Each neighbor 
+         gets to "vote" for their class label. In other 
+         words, each neighbor contributes to the count of 
+         their respective class label.
+      2. Consensus: 
+          Consensus refers to the idea of reaching an 
+          agreement or majority decision based on the 
+          votes of the neighbors. The class label that 
+          occurs most frequently among the k nearest 
+          neighbors is considered the consensus or 
+          majority class. This consensus label is 
+          assigned to the new data point as its 
+          predicted class.
+      Example:
+      For example, suppose k = 5, and the class labels of the 
+      five nearest neighbors of a new data point are as follows: 
+      Neighbor 1 - Class A, Neighbor 2 - Class A, 
+      Neighbor 3 - Class B, Neighbor 4 - Class B, 
+      Neighbor 5 - Class B. 
+      In this case, the majority class among the neighbors 
+      is Class B, which means the new data point will be 
+      assigned the class label Class B as the predicted class.
+
+      Voting and consensus allow the k-NN algorithm to make predictions based on the collective wisdom of its nearest neighbors, giving more weight to the majority class within the local neighborhood.
 
 # Approach
 2. My approach to solving the problem:
