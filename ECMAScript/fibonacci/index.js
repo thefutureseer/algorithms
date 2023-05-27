@@ -1,11 +1,13 @@
-const fibonacci = (count) => {
-   // w/fib sequence starting at 1 and 1 
-   // return if count is under 2
-   if(count < 2) {
-    return count;
-   };
+const fibonacci = (position, iterations = []) => {
+  if (position < 2) {
+    iterations.push(position); // Store the current position in the iterations array
+    return position;
+  }
 
-   return (fibonacci(count - 1) + fibonacci(count - 2));
-
+  iterations.push(position); // Store the current position in the iterations array
+  const result = fibonacci(position - 1, iterations) + fibonacci(position - 2, iterations);
+  iterations.push(result); // Store the result in the iterations array
+  return result;
 };
+
 module.exports = fibonacci;
