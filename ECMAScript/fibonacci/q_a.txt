@@ -1,3 +1,56 @@
+#1 Intuition, forethought & 
+first thoughts on how to solve 
+this problem:
+When approaching the problem of 
+calculating Fibonacci numbers, 
+a common first intuition is to 
+recognize the recursive nature 
+of the sequence. The Fibonacci 
+sequence is defined as the sum 
+of the two preceding numbers, 
+so it naturally lends itself 
+to a recursive solution.
+
+The initial intuition might be 
+to implement a recursive function 
+that calls itself with smaller 
+values until it reaches the base 
+cases, i.e., when the position is 
+0 or 1. The base cases return the 
+corresponding Fibonacci values of 
+0 and 1. For any other position, 
+the function would recursively 
+call itself with the two preceding 
+positions, sum their results, and 
+return the sum as the Fibonacci value for the current position.
+
+Implementing the recursive solution allows for an intuitive and concise representation of the Fibonacci sequence. However, it's important to note that the recursive solution has an exponential time complexity, which means it can be inefficient for larger positions due to redundant computations.
+
+As an alternative, an iterative solution or a solution based on memoization can be considered to improve efficiency. These approaches can avoid redundant computations and provide a more optimized solution for calculating Fibonacci numbers.
+
+Overall, the first intuition often involves recognizing the recursive nature of the sequence and building a solution based on that observation. However, for practical purposes, exploring more efficient algorithms may be necessary.
+
+
+ 
+
+# Approach
+2. My approach to solving the problem:
+
+# Complexity
+3 A. Time complexity:
+
+3 B. Space complexity:
+
+# Code
+```
+4 A. Data structures:
+
+4 B. kind of algorithm:
+
+4 C. Breaking down how to solve this algorithm (subproblems):
+
+5 Other:  
+
 The tricky part is that its all in the call stack and..
 The process of propagating values 
 back in recursive functions is 
