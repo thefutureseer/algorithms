@@ -21,4 +21,14 @@ const fibonacci = (position, iterations = [], logger = null) => {
   return result;
 };
 
+// Example usage:
+const logger = {
+  log: message => {
+    console.log(message);
+  }
+};
+
+fibonacci(4, [], logger);
+
+
 module.exports = fibonacci;
