@@ -1,5 +1,56 @@
+The tricky part is that its all in the call stack and..
+The process of propagating values 
+back in recursive functions is 
+facilitated by the call stack. 
+The call stack is a data structure 
+used by the program's runtime 
+environment to keep track of 
+function calls.
 
-The tricky part is that:
+WHEN A FUNCTION IS CALLED:  
+a new frame (also known as 
+an activation record) is 
+added to the call stack. 
+This frame contains the 
+function's parameters, 
+local variables, and the 
+return address. The return 
+address is the point in the 
+code where the program should 
+continue executing after the 
+function call is complete.
+
+In the case of recursive functions, 
+as each recursive call is made, a 
+new frame is added to the call stack. (stacking up and up)
+These frames are stacked on top of 
+each other in a last-in-first-out 
+(LIFO) order. The call stack keeps 
+track of the execution context for 
+each active function call.
+
+When a base case is reached in the 
+recursion, the function returns a value. 
+This return causes the current frame to 
+be removed from the top of the call stack, 
+and the program execution continues in the 
+previous frame.
+
+At this point, the returned value is 
+available in the previous frame, which 
+can use it for further calculations or 
+return it to the calling function. This 
+process continues until all the frames 
+have been popped off the call stack, and 
+the final result is obtained at the 
+top-level function call.
+
+So, the call stack plays a crucial role in 
+maintaining the context of *RECURSIVE* 
+function calls and propagating the returned 
+values back to the calling functions.
+
+
 The process of propagating the values back 
 in recursive functions happens naturally as 
 part of the recursive function calls and returns.
