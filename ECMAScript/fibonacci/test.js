@@ -1,5 +1,5 @@
 // Import the function to be tested
-const fibonacci = require('./fibonacci');
+const fibonacci = require('./index');
 
 // Test suite for the fibonacci function
 describe('fibonacci', () => {
