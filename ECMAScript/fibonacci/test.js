@@ -28,5 +28,30 @@ describe('fibonacci', () => {
     expect(fibonacci(4)).toBe(3);
   });
 
+  // Test case for position 5
+  it('should return 5 for position 5', () => {
+    expect(fibonacci(5)).toBe(5);
+  });
+
+      // Test case for position 6
+  it('should return 8 for position 6', () => {
+    expect(fibonacci(6)).toBe(8);
+  });
+
+  // Test case for position 7
+  it('should return 13 for position 7', () => {
+    expect(fibonacci(7)).toBe(13);
+  });
+
+  // Test case for position 7
+  it('should return 21 for position 8', () => {
+    expect(fibonacci(8)).toBe(21);
+  });
+
+  // Test case for position 7
+  it('should return 34 for position 9', () => {
+    expect(fibonacci(9)).toBe(34);
+  });  
+
   // Add more test cases as needed for different positions
 });
