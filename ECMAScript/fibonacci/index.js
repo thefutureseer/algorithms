@@ -21,7 +21,7 @@ const fibonacci = (position, iterations = [], logger = null) => {
   return result;
 };
 
-// Example usage:
+// Example logger object mechanism:
 const logger = {
   log: message => {
     console.log(message);
