@@ -1,4 +1,42 @@
 
+The tricky part is that:
+The process of propagating the values back 
+in recursive functions happens naturally as 
+part of the recursive function calls and returns.
+
+When a recursive function is called, it creates 
+a new instance of that function on the call stack. 
+This stack keeps track of the function calls and 
+their associated data. As the recursive calls are 
+made, new instances of the function are added to 
+the stack.
+
+Once the base case is reached, the recursive calls 
+start returning their results. As each recursive 
+call returns, the associated function instance is 
+popped off the call stack, and the control flow 
+returns to the previous instance of the function 
+on the stack.
+
+At this point, the returned value from the recursive 
+call is available to the previous instance of the 
+function. This returned value can be used to calculate 
+the result at the current position.
+
+In the case of the Fibonacci algorithm, the returned 
+values from the recursive calls are summed together 
+to calculate the Fibonacci value at the current position. 
+These values are passed back up the call stack until the 
+final result is obtained.
+
+The propagation of values happens automatically due to the 
+nature of the recursive function calls and returns. Each 
+recursive call returns its value to the previous call, which 
+eventually leads to the final result being calculated at the 
+initial call.
+
+
+
 Starting at 0 or 1??
 
 In the Fibonacci sequence, the starting point can vary depending on the convention used. There are two common conventions for the starting point of the Fibonacci sequence:
