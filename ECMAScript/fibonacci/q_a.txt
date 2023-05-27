@@ -1,0 +1,14 @@
+
+Starting at 0 or 1??
+
+In the Fibonacci sequence, the starting point can vary depending on the convention used. There are two common conventions for the starting point of the Fibonacci sequence:
+
+In the 0-based convention: The Fibonacci sequence starts with 0 as the first number and 1 as the second number. The sequence then continues by adding the two preceding numbers to obtain the next number.
+
+The 0-based Fibonacci sequence would be: 0, 1, 1, 2, 3, 5, 8, 13, ...
+
+In the 1-based convention: The Fibonacci sequence starts with 1 as the first number and 1 as the second number. Again, the sequence continues by adding the two preceding numbers to obtain the next number.
+
+The 1-based Fibonacci sequence would be: 1, 1, 2, 3, 5, 8, 13, 21, ...
+
+Both conventions are commonly used, and the choice of starting point depends on the context and the specific requirements of the problem or application.
