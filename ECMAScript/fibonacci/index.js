@@ -1,34 +1,23 @@
-const fibonacci = (position, iterations = [], logger = null) => {
+const fibonacci = (position, iterations = [], count = 0) => {
+  console.log(`Iteration ${count}: Fibonacci(${position})`);
+
   if (position < 2) {
     iterations.push(position);
-    if (logger) {
-      logger.log(`fibonacci(${position}) called`);
-    }
+    console.log(`  - Recursive calls: ${count}`);
+    console.log(`  - Iterations: [${iterations.join(', ')}]`);
+    console.log(`  - Result: ${position}`);
     return position;
   }
 
   iterations.push(position);
-  if (logger) {
-    logger.log(`fibonacci(${position}) called`);
-  }
-  
-  const result = fibonacci(position - 1, iterations, logger) + fibonacci(position - 2, iterations, logger);
+
+  const result = fibonacci(position - 1, iterations, count + 1) + fibonacci(position - 2, iterations, count + 1);
   iterations.push(result);
-  if (logger) {
-    logger.log(`fibonacci(${position}) result: ${result}`);
-  }
-  
+
+  console.log(`  - Recursive calls: ${count}`);
+  console.log(`  - Iterations: [${iterations.join(', ')}]`);
+  console.log(`  - Result: ${result}`);
   return result;
 };
 
-// Example logger object mechanism:
-const logger = {
-  log: message => {
-    console.log(message);
-  }
-};
-
-fibonacci(4, [], logger);
-
-
-module.exports = fibonacci;
+fibonacci(4);
