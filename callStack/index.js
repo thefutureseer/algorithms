@@ -1,9 +1,13 @@
 function factorial(n) {
+  console.log(`add this to the top o thee callstack: factorial(${n})...`);
+  
   if (n === 0) {
+    console.log("Base case reached. Returning 1. and begin doing all the functions on the top o thee callstack");
     return 1; // base case
   }
   
   const result = n * factorial(n - 1); // recursive call
+  console.log(`Returning the top o thee callStack and multiply it by: factorial(${n}) = ${result}`);
   return result;
 }
 
