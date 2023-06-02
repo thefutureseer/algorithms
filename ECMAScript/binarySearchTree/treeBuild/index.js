@@ -66,6 +66,45 @@ module.exports = { Tree, Node };
 
 
 
+// Create the tree
+const tree = new Tree();
+tree.root = new Node("A");
+
+// Add data to the tree
+tree.root.add("B");
+tree.root.add("C");
+tree.root.add("D");
+
+tree.root.children[0].add("E");
+tree.root.children[0].add("F");
+
+tree.root.children[1].add("G");
+tree.root.children[1].add("H");
+
+tree.root.children[2].add("I");
+tree.root.children[2].add("J");
+
+// Function to recursively display the tree
+function displayTree(node, level = 0, isLast = true, prefix = "") {
+  const line = "│   ";
+  const corner = isLast ? "└── " : "├── ";
+  const indent = "    ".repeat(level);
+  let result = prefix + indent + corner + node.data + "-------\n";
+
+  for (let i = 0; i < node.children.length; i++) {
+    const child = node.children[i];
+    const isLastChild = i === node.children.length - 1;
+    const childPrefix = prefix + indent + (isLast ? "    " : line);
+    result += displayTree(child, level + 1, isLastChild, childPrefix);
+  }
+
+  return result;
+}
+
+// Display the tree in the console
+console.log(displayTree(tree.root));
+
+
 //Create a Node class its constructor should accept an argument that gets assigned to the data property and 
 //initialize an empty array to store children. The Node class should have methods Add & Remove
 
