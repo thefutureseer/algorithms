@@ -1,0 +1,62 @@
+In reinforcement learning, 
+"model-free" refers to an 
+approach where the agent 
+learns to make decisions 
+and improve its behavior 
+directly from interacting 
+with the environment without 
+explicitly building a model 
+or representation of the 
+environment's dynamics.
+
+In model-based reinforcement 
+learning, the agent constructs 
+a model of the environment, 
+which includes the transition 
+probabilities between states 
+and the expected rewards 
+associated with different 
+state-action pairs. With 
+this model, the agent can 
+plan and simulate different 
+scenarios to determine the 
+optimal actions.
+
+On the other hand, model-free 
+reinforcement learning algorithms 
+do not rely on an explicit model 
+of the environment. Instead, they 
+focus on learning an optimal policy 
+by trial and error, through repeated 
+interactions with the environment. 
+The agent directly observes the 
+states and rewards, and based on 
+that information, it updates its 
+policy or action-value estimates 
+to maximize the cumulative reward 
+over time.
+
+Model-free algorithms, such as 
+Q-learning and policy gradients, 
+are generally more flexible and 
+applicable in situations where 
+the environment dynamics are 
+complex or unknown. They can 
+learn directly from raw sensory 
+inputs, and their learning process 
+is often more sample-efficient, as 
+they do not require explicit modeling 
+of the environment.
+
+However, model-free algorithms 
+can have limitations. They may 
+require a larger number of 
+interactions with the environment 
+to converge, and they might struggle 
+in domains with high-dimensional or 
+continuous state and action spaces. 
+Model-based approaches can sometimes 
+be more efficient in terms of sample 
+complexity but require accurate models 
+of the environment, which can be 
+challenging to obtain in practice.
