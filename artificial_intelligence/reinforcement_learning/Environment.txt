@@ -1,0 +1,132 @@
+Environment & 'State' for Q-Learning algorithm 
+
+State:
+A state represents the current 
+configuration or condition of 
+the environment at a particular 
+moment in time. It captures all 
+the relevant information that 
+the agent needs to make decisions. 
+The state can be thought of as 
+the agent's perception or 
+observation of the environment. 
+It typically includes information 
+about the agent's position, the 
+environment's features, or any 
+other relevant variables. The 
+state provides the context for 
+the agent to make decisions and 
+influences the subsequent actions 
+it takes. In essence, the state 
+describes where the agent is in 
+the environment.
+
+Environment:
+In the context of reinforcement 
+learning, the environment is a 
+system in which an agent operates. 
+Each state represents a particular 
+configuration or condition of the 
+environment that the agent can be 
+in. In the Q-Learning file, the 
+environment has six possible states, 
+numbered from 0 to 5.
+
+EXAMPLE:
+Imagine a simple grid-world environment 
+where an agent can move in four directions: 
+up, down, left, and right. The grid is 
+represented by a 2D matrix, and each cell 
+in the matrix represents a state in the 
+environment.
+
+Grid representation:
+__________________
+| 0 | 1 | 2 | 3 |
+|___|___|___|___|
+| 4 |       | 6 |
+|___|_______|___|
+
+In this example, we have six states: 
+0, 1, 2, 3, 4, and 6. State 5 is missing 
+from the grid because it represents a hole 
+or obstacle where the agent cannot move.
+
+The agent can transition between states by 
+taking actions (up, down, left, or right) 
+and moving to neighboring cells. For example, 
+if the agent is in state 0, it can move right 
+to state 1 or down to state 4.
+
+By defining the numStates variable as 6, the 
+code indicates that there are six possible 
+states in the environment. This information 
+is essential for the reinforcement learning 
+algorithm to know the range of valid states 
+it can encounter and learn from during its 
+interactions with the environment.
+
+Environment & 'actions' for Q-Learning algorithm:
+
+
+Action:
+An action, represents the choices or decisions 
+that the agent can take in a given state. It 
+is the agent's response or behavior based on 
+its current perception of the environment. 
+Actions can be any specific operations, 
+movements, or choices available to the 
+agent. For example, in a grid-world environment, 
+the actions can be moving up, down, left, or 
+right. The action is the agent's way of 
+interacting with the environment and exerting 
+control over its future state.
+
+In the context of reinforcement learning, 
+the goal of the agent is to learn an optimal 
+policy—a mapping from states to actions—that 
+maximizes its cumulative reward over time. 
+The agent learns to select actions based on 
+the current state and the expected future 
+rewards associated with different actions. 
+It explores different actions in different 
+states to learn which actions lead to better 
+outcomes.
+
+In summary, states describe the current 
+condition of the environment, and actions 
+represent the choices the agent can make 
+in response to those states. The agent's 
+goal is to learn a policy that determines 
+the best actions to take in different states 
+to maximize its long-term rewards.
+
+In the example (in the Q-Learning folder), 
+the number of possible actions is set to 
+2. The choice of the number of possible 
+actions depends on the specific problem 
+and the actions available to the agent 
+in the given environment.
+
+In many grid-world or maze-like environments, 
+such as the one described earlier, the agent 
+typically has four possible actions: up, down, 
+left, and right. However, in this particular 
+example, two of the states (state 2 and state 3) 
+do not have any valid actions. These states 
+represent obstacles or unreachable areas in 
+the grid where the agent cannot move. Therefore, 
+the agent only has two valid actions in this 
+environment.
+
+By setting numActions to 2, the code indicates 
+that there are two possible actions that the 
+agent can take in the given environment. These 
+actions could be mapped to specific movements 
+such as "go left" and "go right" or any other 
+meaningful actions based on the problem at hand.
+
+It's important to note that the choice of the 
+number of possible actions should align with 
+the specifics of the problem and the available 
+actions in the environment being modeled.
