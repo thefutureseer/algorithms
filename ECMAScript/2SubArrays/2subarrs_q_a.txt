@@ -98,3 +98,12 @@ No other data structures are used in this solution.
    generators. They are often easier to understand and implement 
    than more complex algorithms, and can be an efficient choice 
    for solving many types of problems.
+
+# subproblems
+The subproblems in the given code can be identified as follows:
+
+Initializing an empty array to store the subarrays.
+Iterating through the elements of the input array.
+Extracting subarrays of the specified size using the slice method.
+Adding the extracted subarray to the subArrays array.
+Returning the subArrays array as the result.
