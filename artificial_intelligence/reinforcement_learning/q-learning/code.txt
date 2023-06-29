@@ -1,34 +1,76 @@
-This code implements the Q-learning algorithm to learn an optimal policy for a specific environment. Let's go through the code step by step:
+This code implements the Q-learning 
+algorithm to learn an optimal policy 
+for a specific environment. Let's go 
+through the code step by step:
 
 Environment Setup:
 
-numStates represents the number of states in the environment.
-numActions represents the number of possible actions in the environment.
-rewards is a 2D array representing the immediate rewards for transitioning between states. The value at rewards[state][action] represents the reward for taking 'action' in 'state'. -Infinity represents invalid state-action pairs.
-qValues is a 2D array representing the learned Q-values. Initially, all Q-values are set to 0.
+numStates represents the number 
+of states in the environment.
+
+numActions represents the number 
+of possible actions in the environment.
+
+rewards is a 2D array representing 
+the immediate rewards for transitioning 
+between states. The value at 
+rewards[state][action] represents the 
+reward for taking 'action' in 'state'. 
+-Infinity represents invalid state-action 
+pairs.
+
+qValues is a 2D array representing the 
+learned Q-values. Initially, all 
+Q-values are set to 0.
 
 Q-learning Parameters:
 
-learningRate determines how much the agent updates the Q-values based on new information.
-discountFactor determines the importance of future rewards compared to immediate rewards.
-numEpisodes determines the number of times the agent interacts with the environment to learn.
+learningRate determines how much the 
+agent updates the Q-values based on 
+new information.
+
+discountFactor determines the importance 
+of future rewards compared to immediate 
+rewards.
+
+numEpisodes determines the number of times 
+the agent interacts with the environment to 
+learn.
 
 Q-learning Algorithm:
 
-The algorithm iterates over a number of episodes (defined by numEpisodes).
-In each episode, the current state is randomly initialized.
-The agent keeps interacting with the environment until it reaches the goal state (state 5).
-For each state, the agent selects a random action from the available actions.
-The next state is simulated based on the chosen action.
-The algorithm calculates the maximum Q-value in the next state.
-The current Q-value for the chosen action in the current state is updated using the Q-learning update rule.
-The agent transitions to the next state and repeats the process until it reaches the goal state.
+The algorithm iterates over a number 
+of episodes (defined by numEpisodes).
+In each episode, the current state is 
+randomly initialized.
+The agent keeps interacting with the 
+environment until it reaches the goal 
+state (state 5).
+For each state, the agent selects a 
+random action from the available actions.
+The next state is simulated based on the 
+chosen action.
+The algorithm calculates the maximum 
+Q-value in the next state.
+The current Q-value for the chosen action 
+in the current state is updated using the 
+Q-learning update rule.
+The agent transitions to the next state 
+and repeats the process until it reaches 
+the goal state.
+
 Evaluation of the Learned Policy:
 
-The algorithm evaluates the learned policy by starting from the initial state (state 0).
-The optimal path is stored in the optimalPath array.
-The agent chooses the action with the highest Q-value in the current state and transitions to the next state.
-The optimal path is recorded until the goal state (state 5) is reached.
+The algorithm evaluates the learned 
+policy by starting from the initial 
+state (state 0).
+The optimal path is stored in the 
+optimalPath array.
+The agent chooses the action with 
+the highest Q-value in the current 
+state and transitions to the next state.
+The optimal path is recorded until the 
+goal state (state 5) is reached.
 
 Output:
 
