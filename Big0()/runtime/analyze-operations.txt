@@ -1,17 +1,38 @@
-In JavaScript, we can break down the runtime complexity 
-of an algorithm by analyzing the number of basic operations 
-performed by the algorithm as a function of the input size. 
-Here are some common ways to analyze runtime complexity in 
+In JavaScript, we can break 
+down the runtime complexity 
+of an algorithm by analyzing 
+the number of basic operations 
+performed by the algorithm as 
+a function of the input size. 
+Here are some common ways to 
+analyze runtime complexity in 
 JavaScript:
 
 Counting iterations: 
-If an algorithm involves iterating over a data structure, such as an array or a tree, we can count the number of iterations as a function of the input size. For example, if we are iterating over an array of length n, the number of iterations would be n.
+If an algorithm involves iterating 
+over a data structure, such as an 
+array or a tree, we can count the 
+number of iterations as a function 
+of the input size. For example, if 
+we are iterating over an array of 
+length n, the number of iterations 
+would be n.
 
 Counting comparisons: 
-If an algorithm involves comparing values, such as in a sorting algorithm, we can count the number of comparisons as a function of the input size. For example, if we are sorting an array of length n, the number of comparisons would be proportional to n^2 for a quadratic sorting algorithm.
+If an algorithm involves comparing 
+values, such as in a sorting algorithm, 
+we can count the number of comparisons 
+as a function of the input size. For 
+example, if we are sorting an array of 
+length n, the number of comparisons 
+would be proportional to n^2 for a 
+quadratic sorting algorithm.
 
 Analyzing recursion: 
-If an algorithm is recursive, we can analyze the number of recursive calls as a function of the input size. For example, in a binary search algorithm, the number of recursive calls would be proportional to the logarithm of the input size.
+If an algorithm is recursive, 
+we can analyze the number of 
+recursive calls as a function 
+of the input size. For example, in a binary search algorithm, the number of recursive calls would be proportional to the logarithm of the input size.
 
 Using built-in methods: 
 In JavaScript, many built-in methods, such as Array.sort(), have a known runtime complexity. We can leverage these methods in our algorithms to improve performance.
