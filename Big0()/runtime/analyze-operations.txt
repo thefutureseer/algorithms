@@ -32,15 +32,54 @@ Analyzing recursion:
 If an algorithm is recursive, 
 we can analyze the number of 
 recursive calls as a function 
-of the input size. For example, in a binary search algorithm, the number of recursive calls would be proportional to the logarithm of the input size.
+of the input size. For example, 
+in a binary search algorithm, 
+the number of recursive calls 
+would be proportional to the 
+logarithm of the input size.
 
 Using built-in methods: 
-In JavaScript, many built-in methods, such as Array.sort(), have a known runtime complexity. We can leverage these methods in our algorithms to improve performance.
+In JavaScript, many built-in methods, 
+such as Array.sort(), have a known 
+runtime complexity. We can leverage 
+these methods in our algorithms to 
+improve performance.
 
-Analyzing nested loops: If an algorithm involves nested loops, we can analyze the number of basic operations performed by the inner loop as a function of the input size. For example, if we have two nested loops that iterate over an array of length n, the number of basic operations would be proportional to n^2.
+Analyzing nested loops: 
+If an algorithm involves nested loops, 
+we can analyze the number of basic 
+operations performed by the inner 
+loop as a function of the input 
+size. For example, if we have two 
+nested loops that iterate over an 
+array of length n, the number of 
+basic operations would be proportional 
+to n^2.
 
-Using memoization: If an algorithm involves recursive calls, we can use memoization to cache the results of previous calls and avoid redundant computations. This can significantly improve the performance of recursive algorithms.
+Using memoization: 
+If an algorithm involves recursive 
+calls, we can use memoization to 
+cache the results of previous calls 
+and avoid redundant computations. 
+This can significantly improve the 
+performance of recursive algorithms.
 
-Avoiding unnecessary operations: In JavaScript, some operations can be more expensive than others. For example, accessing elements in an array using a loop index is faster than using the Array.slice() method. By avoiding unnecessary operations and optimizing our code, we can improve the runtime complexity of our algorithms.
+Avoiding unnecessary operations: 
+In JavaScript, some operations can be 
+more expensive than others. For example, 
+accessing elements in an array using a 
+loop index is faster than using the 
+Array.slice() method. By avoiding 
+unnecessary operations and optimizing 
+our code, we can improve the runtime 
+complexity of our algorithms.
 
-Considering the input data: The runtime complexity of an algorithm can vary depending on the characteristics of the input data. For example, some sorting algorithms perform better on partially sorted data than on unsorted data. It is important to consider the expected characteristics of the input data when analyzing runtime complexity.
+Considering the input data: 
+The runtime complexity of an algorithm 
+can vary depending on the characteristics 
+of the input data. For example, some 
+sorting algorithms perform better on 
+partially sorted data than on unsorted 
+data. It is important to consider the 
+expected characteristics of the input 
+data when analyzing runtime complexity.
