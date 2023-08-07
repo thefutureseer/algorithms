@@ -2,15 +2,15 @@
 
 const filterSymbols=(str)=>{
   //right away return the answer
- return (
   //make an array from the string
- Array.from(str)
- //filter the array by matching only the 
- //the alphabet
- .filter(i=>i.match([/a-zA-Z/]))
- //join the array to put the string
- //back together
- .join("")
-)
+  //filter the array by matching only the 
+  //the alphabet
+  //join the array to put the string
+  //back together
+  return Array.from(str).filter(i=>i.match(/[a-zA-Z\s]/)).join("");
+
 };
+
+filterSymbols("and ther*e wer@@e sym*&^bols");
+console.log(filterSymbols("and ther*e wer@@e sym*&^bols"));
 module.exports = filterSymbols;

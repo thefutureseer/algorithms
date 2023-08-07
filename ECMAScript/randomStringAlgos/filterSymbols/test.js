@@ -8,4 +8,12 @@ describe("filterSymbol is a function to remove symbols", ()=>{
     const expectedOutPut = "function";
     expect(func).toBe(expectedOutPut);
   });
+
+  it("removes symbols from string", ()=>{
+    const stringWSyms = "and ther*e wer@@e sym*&^bols"
+    const outPut = "and there were symbols";
+    const filterIt = filterSymbols(stringWSyms);
+    console.log(filterIt, " after filter")
+    expect(filterIt).toBe(outPut);
+  })
 });
