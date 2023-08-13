@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "CommonJS",
+    "strict": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "algorithms/**/*.ts",
+    "/typeScript/queue/__tests__/queue.test.ts"
+  ],
+  "exclude": ["node_modules"],
+  "files": ["typeScript/queue/__tests__/queue.test.ts"]
+}
