@@ -32,59 +32,59 @@
 
 /////////////////////////////////////////////
 
-// function binarySearch(array, key) {
-//  let midIndex = Math.floor(array.length / 2);
-//  let midElement = array[midIndex];
+function binarySearch(array, key) {
+ let midIndex = Math.floor(array.length / 2);
+ let midElement = array[midIndex];
 
-//  if (midElement === key) return true;
-//   else if (midElement < key && array.length > 1) {
-//    return binarySearch(array.splice(midIndex, array.length), key);
-//  }
-//   else if (midElement > key && array.length > 1) {
-//    return binarySearch(array.splice(0, midIndex), key);
-//  } 
-//   else return false;
+ if (midElement === key) return true;
+  else if (midElement < key && array.length > 1) {
+   return binarySearch(array.splice(midIndex, array.length), key);
+ }
+  else if (midElement > key && array.length > 1) {
+   return binarySearch(array.splice(0, midIndex), key);
+ } 
+  else return false;
 
-//     //Function calling itself envoking recursion
-//    // binarySearch([1,3,7,8,9,45,56], 56);
-//   }
+    //Function calling itself envoking recursion
+   // binarySearch([1,3,7,8,9,45,56], 56);
+  }
 
-// function factorial(num) {
-//   if (num === 1) {
-//      return num;
-//   }
-//   return num * factorial(num-1);
-// }
+function factorial(num) {
+  if (num === 1) {
+     return num;
+  }
+  return num * factorial(num-1);
+}
 
 
-// module.exports = binarySearch, factorial;
+module.exports = {binarySearch, factorial};
 
 
 
 /////////////////////////////////
 
-function binarySearch(array, key) {
-  if (array.length === 0) {
-      return false; // Base case: key not found in empty array
-  }
+// function binarySearch(array, key) {
+//   if (array.length === 0) {
+//       return false; // Base case: key not found in empty array
+//   }
   
-  let midIndex = Math.floor(array.length / 2);
-  let midElement = array[midIndex];
+//   let midIndex = Math.floor(array.length / 2);
+//   let midElement = array[midIndex];
 
-  if (midElement === key) {
-      return true; // Base case: key found at the middle
-  } else if (midElement < key) {
-      return binarySearch(array.slice(midIndex + 1), key); // Search right half
-  } else {
-      return binarySearch(array.slice(0, midIndex), key); // Search left half
-  }
-}
+//   if (midElement === key) {
+//       return true; // Base case: key found at the middle
+//   } else if (midElement < key) {
+//       return binarySearch(array.slice(midIndex + 1), key); // Search right half
+//   } else {
+//       return binarySearch(array.slice(0, midIndex), key); // Search left half
+//   }
+// }
 
-function factorial(num) {
-  if (num === 1) {
-      return 1; // Base case: factorial of 1 is 1
-  }
-  return num * factorial(num - 1); // Recursive case
-}
+// function factorial(num) {
+//   if (num === 1) {
+//       return 1; // Base case: factorial of 1 is 1
+//   }
+//   return num * factorial(num - 1); // Recursive case
+// }
 
-module.exports = { binarySearch, factorial };
+// module.exports = { binarySearch, factorial };
