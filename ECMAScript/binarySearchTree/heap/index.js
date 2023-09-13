@@ -4,11 +4,14 @@
 //equation to find the left child i * 2
 //equation to find the right child i * 2 + 1
 
-//array first index always set to null
-var heapArr = [null];
 
-const minHeap = (num) => {
-  //push into heap
+const minHeap = function() {
+  //array first index always set to null
+  var heapArr = [null];
+  
+  this.insert = function(num) {
+ //push into heap
 
+  }
 
 }
