@@ -12,4 +12,6 @@ var linearSearch = (arr, target) => {
   if (i===arr.length) {
     return -1;
   }
-}
+};
+
+module.exports = linearSearch;
