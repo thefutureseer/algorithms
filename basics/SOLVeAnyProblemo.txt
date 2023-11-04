@@ -1,0 +1,97 @@
+The first thing to think about 
+when solving any algorithm is to understand the problem statement clearly. 
+This involves reading and analyzing the problem statement, and identifying 
+the input, output, 
+and any constraints or requirements that the solution should meet.
+
+Once you have a clear understanding of the problem, 
+the next step is to determine an appropriate algorithmic approach to solving it. 
+This may involve breaking down the problem into smaller sub-problems, 
+identifying patterns or regularities in the input data, or applying 
+established algorithmic techniques or data structures to the problem.
+
+After identifying the approach, 
+the next step is to implement the algorithm in code. 
+This involves writing the code in the appropriate programming language, ensuring 
+that it meets the requirements of the problem, and testing it against sample 
+inputs and edge cases to verify its correctness.
+
+Finally, 
+it is important to analyze the time and space complexity of the algorithm 
+to ensure that it is efficient and scalable for larger input sizes.
+
+Overall, 
+the key to solving any algorithm is to approach it systematically and logically, 
+and to break it down into smaller, more manageable steps.
+
+
+PROBLEM SOLVING
+1) Define the problem: 
+Start by clearly defining the problem 
+you are facing. Pinpoint the essence and 
+subproblems. Identify what the problem 
+is and why it is important to solve it.
+
+2)Gather information: 
+Once you have defined the problem, gather 
+as much information as you can about it. 
+Try to identify the causes and effects of 
+the problem, and any relevant background 
+information that could help you find a solution.
+
+3)Analyze the information: 
+After gathering information, analyze it to 
+identify patterns and relationships. Look 
+for any underlying causes or factors that 
+may be contributing to the problem.
+
+4)Brainstorm solutions: 
+Generate a list of possible solutions. Be 
+creative and don't be afraid to consider 
+unconventional approaches. Remember to 
+evaluate each solution based on its feasibility, 
+effectiveness, and potential drawbacks.
+
+5)Choose a solution: 
+Based on your analysis and evaluation of potential 
+solutions, select the most promising one.
+
+6)Develop an action plan: 
+Once you have chosen a solution, develop an action 
+plan that outlines the steps you need to take to 
+implement it. Identify any resources you need, and 
+set timelines and deadlines for each step.
+
+7)Take action: 
+Implement the solution by following the action plan. 
+Be flexible and willing to make adjustments as necessary.
+
+8)Evaluate the results: 
+After implementing the solution, evaluate the results to 
+determine whether it was effective. If it was not, try 
+to identify why and make any necessary adjustments. If it 
+was successful, consider whether there are any further 
+improvements that could be made.
+
+Remember that problem-solving is an 
+iterative process. You may need to 
+repeat these steps multiple times before 
+you find a satisfactory solution.
+
+
+When trying to solve a difficult algorithm, 
+the first thing I would do is to break down the problem into 
+smaller, more manageable subproblems. Then I try to find 
+solutions for each subproblem separately. Once I have solutions 
+for all the subproblems, I try to combine them in order to 
+solve the overall problem.
+
+Additionally, I would check to see if there are any similar 
+problems or solutions that have been previously published, 
+and see if I can adapt those solutions to fit my problem.
+
+I would also try to understand the time and space complexity of 
+the problem and try to find an optimized solution.
+
+Also a key is to test the implementation with sample test cases 
+and debug them if needed.
