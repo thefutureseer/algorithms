@@ -11,26 +11,64 @@
 
 
 var mergeMeetingTimes = function(arr) {
+  //the correct answer does not 
+  //need to use a deep copy because 
+  //the input intervals array is not being modified. 
+  //This line does a deep copy if needed:
   var arrCopy = JSON.parse(JSON.stringify(arr));
+
+  //sort the deep copy in ascending 
+  //order. 'a' - 'b' if returns
+  // positive it means the 'a'
+  //is lesser value.
   var sortedArr = arrCopy.sort((a, b) => a[0] - b[0]);
 
+  //variable to store the first interval in
+  //the sorted array
   var result = [sortedArr[0]];
 
+  //look at each interval and compare
   for (var i = 1; i < sortedArr.length; i++) {
+    //Store the result variable which 
+    //is the first item the the 
+    //sorted array
     var lastMeeting = result[result.length - 1];
+    console.log(lastMeeting, " 1last meeting")
+    // variable to look at each 
+    //interval in the sorted array
     var currentMeeting = sortedArr[i];
-
+    console.log(currentMeeting, " 1current meeting");
+    
+    //merging logic:
+    //if the second interval in the sorted 
+    //results array is larger 
+    //than the first interval in the array
+    // then do this
     if (lastMeeting[1] >= currentMeeting[0]) {
+      console.log(lastMeeting, " 2last meeting")
+      console.log(currentMeeting, " 2current meeting")
+      //if the second interval in the sorted
+      //results array is less than the second
+      //
       if (lastMeeting[1] < currentMeeting[1]) {
+        console.log(lastMeeting, " 3 last meeting")
+        console.log(currentMeeting, " 3current meeting")
         lastMeeting[1] = currentMeeting[1];
       }
     } else {
+      console.log(currentMeeting, " 4current meeting")
+      console.log(result, " result")
       result.push(currentMeeting);
     }
+    console.log(currentMeeting, "5current meeting")
+    console.log(lastMeeting, " 4 /5last meeting")
   }
-
+  
+  console.log(result, " finished result")
   return result;
 };
+
+mergeMeetingTimes([[1, 3], [2, 4], [3,5], [6, 7 ]]);
 
 ///////////Brut force //////////
 
