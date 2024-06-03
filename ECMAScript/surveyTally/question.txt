@@ -1,0 +1,21 @@
+From json iterate over and collect 
+the object_id keys as though from a survey
+to get the total number of surveys 
+taken.
+
+Code outline:
+1. json is a string but the structure 
+of an object so first -parse- turn it into a 
+javascript object keys and values.
+2. Create an object to keep track
+of all the keys 
+that we will be counting.
+3. Loop over the object recursively over
+the keys to count
+4. Count the keys
+5. Display the results. return or console.log the results
+
+Data structures
+Input: json 
+Empty variable counter object
+Recursive function or Stack or Queue
