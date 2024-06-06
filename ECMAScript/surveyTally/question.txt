@@ -3,6 +3,8 @@ the object_id keys as though from a survey
 to get the total number of surveys 
 taken.
 
+UPDATE: count majority vote for highschool forever.
+
 Code outline:
 1. json is a string but the structure 
 of an object so first -parse- turn it into a 
