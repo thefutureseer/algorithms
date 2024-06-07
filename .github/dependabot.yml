@@ -9,3 +9,5 @@ updates:
         versions: ["<latest"]
       - dependency-name: "@babel/traverse"
         versions: ["<latest"]
+      - dependency-name: "ajv"
+        versions: ["<latest"]
