@@ -1,0 +1,11 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    ignore:
+      - dependency-name: "acorn"
+        versions: ["<latest"]
+      - dependency-name: "@babel/traverse"
+        versions: ["<latest"]
