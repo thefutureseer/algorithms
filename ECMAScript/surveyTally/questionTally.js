@@ -25,10 +25,6 @@ const countKeys = (inputJson) => {
   }
   majorityVote = highSchoolForever > highSchoolForeverNo ? 'highSchoolForever' : 'highSchoolForeverNo';
 
-  console.log("Number of yes' for vampireHighSchool", highSchoolForever )
-  console.log("Number of no for noVampireHighSchool", highSchoolForeverNo)
-  console.log("Number of users:", idCount, 'highSchoolforever? ', majorityVote);
-
   return {idCount, highSchoolForever, highSchoolForeverNo, majorityVote};
 };
 
