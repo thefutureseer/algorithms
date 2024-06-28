@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/thefutureseer/algorithms#readme",
   "dependencies": {
+    "@babel/traverse": "^7.24.7",
+    "acorn": "^8.11.3",
+    "ajv": "^8.16.0",
     "avl-tree-js": "^0.0.8"
   },
   "devDependencies": {
