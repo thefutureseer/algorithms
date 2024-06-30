@@ -1,31 +1,68 @@
-function merge(leftArray, rightArray) {
-  const resultsArray = [];
-  let leftIndex = 0;
-  let rightIndex = 0;
-
-  while (leftIndex < leftArray.length && rightIndex < rightArray.length) {
-      if (leftArray[leftIndex] < rightArray[rightIndex]) {
-          resultsArray.push(leftArray[leftIndex]);
-          leftIndex++;
-      } else {
-          resultsArray.push(rightArray[rightIndex]);
-          rightIndex++;
-      }
-  }
-
-  // After the while loop, one of the arrays might still have elements
-  while (leftIndex < leftArray.length) {
-      resultsArray.push(leftArray[leftIndex]);
-      leftIndex++;
-  }
-
-  while (rightIndex < rightArray.length) {
-      resultsArray.push(rightArray[rightIndex]);
-      rightIndex++;
-  }
-
-  return resultsArray;
+function mergeSort(arr) {
+    //If only one number in array then return
+    if (arr.length <= 1) {
+        return arr;
+    }
+    
+    //Else Split the array in half
+    const leftSide = Math.floor(arr.length / 2);
+    const left = arr.slice(0, leftSide);
+    const right = arr.slice(leftSide);
+    
+    // Recursively sort both halves and merge them one by one
+    return merge(mergeSort(left), mergeSort(right));
 }
+
+function merge(left, right) {
+    //create a space to put the new array
+    const sorted = [];
+    
+    //Merge each number from each array until none left
+    while (left.length && right.length) {
+        if (left[0] < right[0]) {
+            sorted.push(left.shift());
+        } else {
+            sorted.push(right.shift());
+        }
+    }
+    
+    // Concatenate any remaining elements
+    //if only one array has something in it
+    return [...sorted, ...left, ...right];
+}
+
+console.log(mergeSort([2, 1, 4, 5, 7, 9, 10]));
+
+
+
+// function merge(leftArray, rightArray) {
+//   const resultsArray = [];
+//   let leftIndex = 0;
+//   let rightIndex = 0;
+
+//   while (leftIndex < leftArray.length && rightIndex < rightArray.length) {
+//       if (leftArray[leftIndex] < rightArray[rightIndex]) {
+//           resultsArray.push(leftArray[leftIndex]);
+//           leftIndex++;
+//       } else {
+//           resultsArray.push(rightArray[rightIndex]);
+//           rightIndex++;
+//       }
+//   }
+
+//   // After the while loop, one of the arrays might still have elements
+//   while (leftIndex < leftArray.length) {
+//       resultsArray.push(leftArray[leftIndex]);
+//       leftIndex++;
+//   }
+
+//   while (rightIndex < rightArray.length) {
+//       resultsArray.push(rightArray[rightIndex]);
+//       rightIndex++;
+//   }
+
+//   return resultsArray;
+// }
 
 
 
