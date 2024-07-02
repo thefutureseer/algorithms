@@ -31,7 +31,7 @@ function merge(left, right) {
     return [...sorted, ...left, ...right];
 }
 
-console.log(mergeSort([2, 1, 4, 5, 7, 9, 10]));
+// console.log(mergeSort([2, 1, 4, 5, 7, 9, 10]));
 
 
 
