@@ -1,4 +1,4 @@
-# Comparing Python vs JavaScript Popular Functions
+# Comparing Python vs JavaScript
 
 ## 1. Outputting Data
 - **Python**: 
