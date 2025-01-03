@@ -1,3 +1,7 @@
+# Complexity:
+# Time Complexity: (O(n log n))
+# Space Complexity: (O(n)), due to the additional space used during merging.
+
 def merge_sort(arr):
     # Base case: if the array has 1 or 0 elements, it is already sorted
     if len(arr) <= 1:
