@@ -49,14 +49,14 @@ The **heap structure** is a type of binary tree that satisfies the **heap proper
 
 ## Representation of a Heap
 
-### Array Representation
+### 1. Array Representation
 - The heap is often stored as an array where:
   - **Parent node** is at index `i`.
   - **Left child** is at index `2 * i + 1`.
   - **Right child** is at index `2 * i + 2`.
 - This representation is memory efficient since no explicit pointers are needed.
 
-### Node-Based Representation
+### 2. Node-Based Representation
 - Each node is represented as an object containing:
   - Its value.
   - A pointer to the left child.
@@ -78,7 +78,7 @@ This array corresponds to the following tree:
 5   9 8
 ```
 
-# other heaps: 
+# other heap reps: 
 
 ## Besides **array representation** and **node-based representation**, there are other less common ways to represent heaps, depending on the use case or the underlying data structure. Here are some additional options:
 
