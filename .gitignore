@@ -1,3 +1,23 @@
 # Dependency directories
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+env/
+venv/
+
+# Python egg files
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Test results
+.pytest_cache/
+
 node_modules
 .DS_Store
+__pycache__
