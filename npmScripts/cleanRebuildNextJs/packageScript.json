@@ -1,0 +1,10 @@
+{
+  "script" : {
+    "reset" : "rm -rf .next && rm -rf node_modules && rm -rf package-lock.json && rm -rf yarn.lock && rm -rf pnpm-lock.yaml",
+    "install" : "npm install",
+    "build" : "npm run build",
+    "start" : "npm start",
+    "dev" : "npm run dev",
+    "test" : "npm test"
+  }
+}
