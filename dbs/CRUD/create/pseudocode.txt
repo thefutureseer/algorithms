@@ -1,0 +1,6 @@
+1. Recieve data ({object/json})
+2. validate required fields user (loop)
+3. create new user object (object)
+4. send, save user data to db (Built-in async method: .save() e.g. from Mongoose)
+5. if successful  return user data (object: json , show on ui)
+6. If there is an error (e.g., duplicate email), return an error message (object with a string error message)
