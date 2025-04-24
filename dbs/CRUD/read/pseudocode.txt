@@ -1,0 +1,14 @@
+Read operation for Nextjs
+1. Define a function to handle "GET" requests
+   - Receive the request object and any route parameters
+
+2. Extract the ID from the URL (params) if using dynamic route
+   - Use the ID to query the database (e.g., findById)
+
+3. Optionally, extract query parameters (e.g., page number, filters)
+
+4. If data is found:
+   - Return the data as JSON to the client
+
+5. If data is not found or there's an error:
+   - Return an error message and appropriate HTTP status code

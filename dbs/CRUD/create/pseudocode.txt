@@ -1,5 +1,5 @@
 1. Recieve data ({object/json})
-2. validate required fields user (loop)
+2. validate required fields user ("string" number check)
 3. create new user object (object)
 4. send, save user data to db (Built-in async method: .save() e.g. from Mongoose)
 5. if successful  return user data (object: json , show on ui)
