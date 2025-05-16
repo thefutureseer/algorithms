@@ -1,0 +1,31 @@
+Question: Given a string, find 
+the longest subString without
+repeating characters.
+
+Psuedocode:
+1. variables for 1 pointer, 
+  new hashSet, and maxLength
+2. Function to look at given 
+  string. 
+3. First character looked at 
+  by left pointer and right 
+  pointer is set by the for
+  loop second 
+4. inside of the for loop the
+  right pointer is checked 
+  against the hash set. 
+5. If the set has it then 
+  delete the hashSet left 
+  pointer and
+  move the left pointer up one.
+6. move the right pointer up one
+  and check if the maxLength
+  is less than the right pointer - left pointer
+  and set maxLength to the higher number.
+7. If its not in the hash set
+  add it to the hash set and move
+  the right pointer up one.
+  and check if the maxLength
+  is less than the right pointer - left pointer
+  and set maxLength to the higher number.
+8. Continue through the string and return the maxLength.
