@@ -1,5 +1,5 @@
 Given an array of integers, get 
-the highest sum of consecutive 
+the highest sum of contiguous
 numbers in an array. If not consecutive 
 then it shouldnt be counted.
 
@@ -23,13 +23,10 @@ Explanation: The subarray [5,4,-1,7,8] has the largest sum 23.
 
 
 Psuedocode:
-1. Varables for MaxSubArray, CurrentSubArray
-2. Function to look for consecutive numbers
-3. If the next number is 
- consecutive then add it to the 
- previous number and set it to CurrentSubArray.
-4. If the number is not consecutive 
- to the previous number stop counting 
-5. check if number of CurrentSubArray 
-is larger than MaxSubArray if yes then
-set MaxSubArray as CurrentSubArray
+1. Varables for MaxSubArray, CurrentMax
+2. Function to add contiguous numbers
+3. Begin looping through given array add the 
+  contiguous numbers.
+4. If the sum is lower than MaxSubArray number
+ stop adding and start at the current number.
+5. return MaxSubArray sum
