@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory leak demo: Set vs WeakSet</title>
+    <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+      background: #f5f5f5;
+    }
+    button {
+      margin: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    #demo-buttons {
+      margin-top: 1.5rem;
+    }
+    #status {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: darkslategray;
+    }
+    </style>
+</head>
+<body>
+  <h1>🧠 JavaScript Memory Leak Demo</h1>
+  <p>Select which version you'd like to test:</p>
+
+  <div id="mode-select">
+    <button onclick="initDemo('set')">Test with Set (leaky memory)</button>
+    <button onclick="initDemo('weakset')">Test with WeakSet (safe/ GC)</button>
+  </div>
+
+
+  <div id="demo-buttons" style="display:none;">
+    <button id="addBtn">Add Element</button>
+    <button id="removeBtn">Remove All Elements</button>
+    <p id="status"></p>
+  </div>
+
+
+  <script>
+    let trackedElements = null;
+    let currentMode = '';
+    let elements = [];
+
+    function initDemo(mode) {
+      currentMode = mode;
+      trackedElements = mode === 'set' ? new Set() : new WeakSet();
+      elements = [];
+
+      document.getElementById('mode-select').style.display = 'none';
+      document.getElementById('demo-buttons').style.display = 'block';
+
+      document.getElementById('status').textContent = 
+        `Currently testing: ${mode.toUpperCase()}. ${
+          mode === 'set' 
+            ? '⚠️ This will cause a memory leak.' 
+            : '✅ Elements will be garbage collected.'}`;
+    }
+
+    document.getElementById('addBtn').addEventListener('click', () => {
+      const el = document.createElement('div');
+      el.textContent = 'Leaky Div';
+      el.style.margin = '4px';
+      el.style.padding = '8px';
+      el.style.background = '#cce5ff';
+      el.style.border = '1px solid #004085';
+      document.body.appendChild(el);
+
+      elements.push(el); // Keep track of DOM elements
+      trackedElements.add(el); // Store in Set or WeakSet
+    });
+
+    document.getElementById('removeBtn').addEventListener('click', () => {
+      elements.forEach(el => el.remove());
+      elements = [];
+      document.getElementById('status').textContent += ` Elements removed from DOM.`;
+    });
+  </script>
+</body>
+</html>
