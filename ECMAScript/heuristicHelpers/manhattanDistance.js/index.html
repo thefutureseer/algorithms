@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Manhattan Distance Visualization</title>
+<style>
+  canvas {
+    border: 1px solid black;
+  }
+</style>
+</head>
+<body>
+  <h1>Manhattan Distance</h1>
+  <p>This visualization shows the Manhattan distance between two points on a grid.</p>
+
+  <canvas id="grid" width="630" height="540"></canvas>
+  <script>
+    const canvas = document.getElementById('grid');
+    const ctx = canvas.getContext('2d');
+    const cellOnGridSizePx = 70; // size of each cell in px
+    const cols = canvas.width / cellOnGridSizePx;
+    const rows = canvas.height / cellOnGridSizePx;
+
+    // Example points
+    const startingPoint = { x: 3, y: 2 };
+    const goal = { x: 8, y: 6 };
+
+    // Draw grid
+    function drawGrid() {
+      ctx.strokeStyle = '#ccc';
+      for (let i = 0; i <= cols; i++) {
+        ctx.beginPath();
+        ctx.moveTo(i * cellOnGridSizePx, 0);
+        ctx.lineTo(i * cellOnGridSizePx, canvas.height);
+        ctx.stroke();
+      }
+      for (let j = 0; j <= rows; j++) {
+        ctx.beginPath();
+        ctx.moveTo(0, j * cellOnGridSizePx);
+        ctx.lineTo(canvas.width, j * cellOnGridSizePx);
+        ctx.stroke();
+      }
+    }
+
+    // Draw a cell at grid coords
+    function drawCell(x, y, color) {
+      ctx.fillStyle = color;
+      ctx.fillRect(x * cellOnGridSizePx, y * cellOnGridSizePx, cellOnGridSizePx, cellOnGridSizePx);
+    }
+
+    // Highlight Manhattan path
+    function heuristicHighlightManhattanPath(start, end) {
+      ctx.fillStyle = 'rgba(255, 255, 0, 0.5)'; // semi-transparent yellow
+      
+      // Horizontal part of path
+      let xStart = Math.min(start.x, end.x);
+      let xEnd = Math.max(start.x, end.x);
+      for (let x = xStart; x <= xEnd; x++) {
+        drawCell(x, start.y, 'rgba(255, 255, 0, 0.5)');
+      }
+
+      // Vertical part of path
+      let yStart = Math.min(start.y, end.y);
+      let yEnd = Math.max(start.y, end.y);
+      for (let y = yStart; y <= yEnd; y++) {
+        drawCell(end.x, y, 'rgba(255, 255, 0, 0.5)');
+      }
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      drawGrid();
+      
+      // Draw Manhattan path first (underneath)
+      heuristicHighlightManhattanPath(startingPoint, goal);
+      
+      
+      // Draw startingPoint (blue)
+      drawCell(startingPoint.x, startingPoint.y, 'aqua');
+      // Draw goal (red)
+      drawCell(goal.x, goal.y, 'red');
+      
+
+      // Draw labels
+      ctx.fillStyle = 'black';
+      ctx.font = '12px Arial';
+      ctx.fillText('startingPoint', startingPoint.x * cellOnGridSizePx + 2, startingPoint.y * cellOnGridSizePx + 15);
+      ctx.fillText('Goal', goal.x * cellOnGridSizePx + 2, goal.y * cellOnGridSizePx + 15);
+
+      // Show Manhattan distance text
+      const dist = Math.abs(startingPoint.x - goal.x) + Math.abs(startingPoint.y - goal.y);
+
+      ctx.fillText('Manhattan Distance: ' + dist, 10, canvas.height -500);
+      
+    }
+
+    draw();
+  </script>
+</body>
+</html>
